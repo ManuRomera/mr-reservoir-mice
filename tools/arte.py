@@ -4,6 +4,8 @@ figuras de cuerpo entero, fichas redondas, retratos, escenas 16:9 con miniatura,
 (recortados de las hojas de 3×3) y ayudas de juego con su texto compuesto. Todo con la marca MR (regla de la casa).
 Uso: python3 tools/arte.py [grupo ...]   grupos: personajes escenas iconos vehiculos ayudas ui   (sin nada: todos)"""
 import random, shutil, sys, textwrap
+import cv2
+import numpy as np
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFilter, ImageFont, ImageOps
 
@@ -100,6 +102,29 @@ def redondo(im, lado=400):
     return marca.discreta(base, 300, 330, 18)
 
 
+COLOR = {"rojo": (176, 36, 30), "verde": (52, 122, 72), "purpura": (110, 50, 138), "negro": (52, 48, 46),
+         "plata": (178, 184, 192), "beige": (212, 188, 146), "gris": (122, 124, 128)}
+
+def panel(im, slug):
+    """Cambia el panel amarillo de la serie al color del ratón, conservando la textura de tinta y los bordes."""
+    if slug not in COLOR: return im
+    rgba = np.array(im.convert("RGBA")); rgb = rgba[..., :3].astype(np.float32)
+    hsv = cv2.cvtColor(rgba[..., :3], cv2.COLOR_RGB2HSV).astype(np.float32)  # H 0-180
+    h, s, v = hsv[..., 0], hsv[..., 1] / 255, hsv[..., 2] / 255
+    tono = np.clip(1 - (np.abs(h - 21) - 6) / 6, 0, 1)       # amarillo-naranja de la serie (H≈21 en OpenCV)
+    w = tono * np.clip((s - .32) / .28, 0, 1)
+    # El panel es amarillo puro (H 19-25, muy saturado y claro); pelajes, corbatas y cadenas de oro no llegan.
+    nucleo = (h >= 19) & (h <= 25) & (s > .7) & (v > .82)
+    n, lab, st, _ = cv2.connectedComponentsWithStats(nucleo.astype(np.uint8), 8)
+    zona = np.isin(lab, [i for i in range(1, n) if st[i, cv2.CC_STAT_AREA] > 120]).astype(np.uint8)
+    zona = cv2.dilate(zona, np.ones((7, 7), np.uint8))       # incluye el antialias del borde
+    w = w * zona
+    vref = np.median(v[(zona > 0) & (w > .8)])
+    nuevo = np.array(COLOR[slug], np.float32)[None, None, :] * np.clip(v / vref, 0, 1.25)[..., None]
+    rgba[..., :3] = np.clip(rgb * (1 - w[..., None]) + nuevo * w[..., None], 0, 255).astype(np.uint8)
+    return Image.fromarray(rgba)
+
+
 def retrato_compuesto(fig, w=1024, h=1365):
     """PNJ genéricos sin retrato propio: su figura sobre papel crema con el panel amarillo de la serie."""
     out = Image.new("RGBA", (w, h), PAPEL + (255,))
@@ -123,7 +148,7 @@ def personajes():
         if s == "limpiador":
             p = Image.open(REF / "roberto.png").convert("RGBA")
         elif por.exists():
-            p = Image.open(por).convert("RGBA")
+            p = panel(Image.open(por).convert("RGBA"), s)  # panel del color del ratón
         else:
             p = retrato_compuesto(fig)
         p = ImageOps.fit(p, (768, 1024), Image.LANCZOS, centering=(0.5, 0.3))

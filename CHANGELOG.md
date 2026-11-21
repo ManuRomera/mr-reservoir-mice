@@ -1,5 +1,12 @@
 # Cambios
 
+## 1.0.1
+
+- **Texto legible en los diarios** con tema claro y oscuro: la guía, los dosieres y la libreta llevan su propio papel y tinta y ya no heredan el color del tema de Foundry.
+- **Retrato nuevo del Sr. Púrpura** (el anterior tenía tres brazos).
+- **Cada ratón con el panel de su color** tras el retrato: rojo, verde, púrpura, negro, plata, beige y gris.
+- El sello «Confidencial» ya no pisa el nombre en los dosieres.
+
 ## 1.0.0
 
 Primera versión.

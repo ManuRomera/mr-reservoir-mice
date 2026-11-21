@@ -13,6 +13,7 @@ R = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(R / "texto")); sys.path.insert(0, str(R / "tools"))
 import datos as D  # noqa: E402
 import md  # noqa: E402
+from arte import COLOR  # el panel de cada ratón, igual que en su retrato
 
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 SAL = R / "docs" / "pdf"; TMP = Path("/Volumes/Datos_Dock/FoundryVTT/Trabajo RM/tmp")
@@ -160,7 +161,8 @@ def dosier(p):
                f'<h3>Quién eres</h3><p>{esc(p["historia"])}</p><h3>Tu objetivo oculto</h3><p>{esc(p["objetivo"])}</p>'
                + (f"<h3>Qué sabes y opinas de los demás</h3><dl>{op}</dl>" if op else "") + "</section>")
     stats = "".join(f'<div><span>{k}</span><b>{v}</b></div>' for k, v in (("FUE", p["fue"]), ("DES", p["des"]), ("VOL", p["vol"]), ("PG", p["pg"]), ("Pepitas", p["pepitas"])))
-    ficha = (f'<section class="pag ficha"><img class="cuerpo" src="{figura_justa(p["slug"])}" alt="">'
+    franja = "#%02x%02x%02x" % COLOR[p["slug"]] if p["slug"] in COLOR else "var(--am)"
+    ficha = (f'<section class="pag ficha" style="--franja: {franja}"><img class="cuerpo" src="{figura_justa(p["slug"])}" alt="">'
              f'<div class="cab"><p class="kick">Ficha · Mausritter</p><h1>{esc(p["n"])}</h1><p class="sub">{esc(p["lema"])}</p></div>'
              f'<div class="stats">{stats}</div><p class="aspecto"><strong>Aspecto.</strong> {esc(p["aspecto"])}</p><h3>Seis casillas</h3><div class="inv">'
              + "".join(casilla(p, k, l) for k, l in RANURAS) + '</div><p class="nota">Las condiciones ocupan casillas. Si no queda sitio, suelta algo.</p></section>')

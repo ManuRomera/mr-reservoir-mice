@@ -110,7 +110,7 @@ figcaption { font-family: Maquina; font-size: 8.5pt; color: var(--gr); margin-to
 .dosier dd { margin: 0; }
 .ficha { height: 258mm; position: relative; padding-left: 70mm; isolation: isolate; }
 .ficha .cuerpo { position: absolute; left: -4mm; bottom: 0; width: 78mm; height: 215mm; object-fit: contain; object-position: bottom center; }
-.ficha::before { content: ""; position: absolute; left: 0; top: 30mm; width: 62mm; bottom: 6mm; background: var(--am); transform: skewY(-3deg); z-index: -1; }
+.ficha::before { content: ""; position: absolute; left: 0; top: 30mm; width: 62mm; bottom: 6mm; background: var(--franja, var(--am)); transform: skewY(-3deg); z-index: -1; }
 .ficha h1 { font-family: Anton; font-weight: normal; font-size: 40pt; margin: 0; line-height: 1; }
 .ficha .sub { font-family: Bebas; font-size: 14pt; letter-spacing: .06em; color: var(--sa); margin: 0 0 3mm; }
 .ficha .stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 2mm; margin-bottom: 3mm; }

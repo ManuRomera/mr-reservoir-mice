@@ -141,6 +141,10 @@ body.mrrm-alto-contraste { --rm-papel: #fffdf6; --rm-papel2: #fff4cf; --rm-gris:
 .mrrm-chat .mrrm-dex { font-size: .8em; color: var(--rm-gris); }
 
 /* ---------------- Diarios de la aventura ---------------- */
+/* Papel y tinta propios: no heredan el color del tema claro u oscuro de Foundry. */
+.mrrm-diario, .mrrm-dosier { color: var(--rm-tinta); background: var(--rm-papel); padding: 1rem 1.2rem; }
+:is(.mrrm-diario, .mrrm-dosier) :is(h1, h2, h4, h5, h6, p, li, dt, dd, td, blockquote, strong, em, b, i:not([class*="fa-"]), span, figcaption) { color: inherit; }
+:is(.mrrm-diario, .mrrm-dosier) a.content-link { color: var(--rm-sangre); background: #fff6d6; border-color: var(--rm-sangre); }
 .mrrm-diario { font-family: "RM Crimson", serif; font-size: calc(17px * var(--rm-escala)); line-height: 1.45; color: var(--rm-tinta); }
 .mrrm-diario p { text-align: justify; hyphens: auto; }
 .mrrm-diario .mrrm-kicker { font-family: "RM Bebas", sans-serif; letter-spacing: .14em; color: var(--rm-sangre); font-size: 1.05em; margin: 0; }
@@ -163,7 +167,7 @@ body.mrrm-alto-contraste { --rm-papel: #fffdf6; --rm-papel2: #fff4cf; --rm-gris:
 /* Dosier secreto */
 .mrrm-dosier { font-family: "RM Maquina", monospace; font-size: calc(15px * var(--rm-escala)); line-height: 1.5; background: #efe3c2; padding: 1rem 1.2rem; border: 1px solid #b9a77c; }
 .mrrm-dosier h1 { font-family: "RM Anton", sans-serif; font-weight: normal; border: 0; margin: 0; }
-.mrrm-dosier .mrrm-sello { display: inline-block; color: var(--rm-rojo); border: 3px solid var(--rm-rojo); padding: 0 .5rem; transform: rotate(-4deg); font-family: "RM Bebas", sans-serif; font-size: 1.4em; letter-spacing: .1em; }
+.mrrm-dosier .mrrm-sello { display: inline-block; color: var(--rm-rojo); border: 3px solid var(--rm-rojo); padding: 0 .5rem; transform: rotate(-4deg); font-family: "RM Bebas", sans-serif; font-size: 1.4em; letter-spacing: .1em; margin-bottom: .5rem; }
 .mrrm-dosier img.mrrm-foto { float: right; width: 34%; margin: 0 0 .5rem 1rem; border: 6px solid #fff; box-shadow: 2px 3px 6px rgba(0, 0, 0, .35); transform: rotate(2deg); }
 .mrrm-dosier h3 { font-family: "RM Bebas", sans-serif; font-size: 1.35em; letter-spacing: .05em; border-bottom: 2px solid var(--rm-tinta); color: var(--rm-sangre); }
 .mrrm-dosier .mrrm-stats { display: flex; flex-wrap: wrap; gap: .4rem; margin: .5rem 0; }
