@@ -1,7 +1,7 @@
 {
   "id": "mr-reservoir-mice",
   "title": "MR- Reservoir Mice",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Un golpe ratonil que salió como el culo. Thriller criminal de una sesión para Mausritter: seis ratones trajeados, cuatro cajas de diamantes y un poli infiltrado. Aventura completa con dosieres secretos, relojes de la noche, salvación de nervios, duelo de miradas, arte propio de la serie, música e integración con MR- Dirección y MR- Pizarra.",
   "authors": [
     {
@@ -67,7 +67,7 @@
   "socket": true,
   "url": "https://github.com/ManuRomera/mr-reservoir-mice",
   "manifest": "https://github.com/ManuRomera/mr-reservoir-mice/releases/latest/download/module.json",
-  "download": "https://github.com/ManuRomera/mr-reservoir-mice/releases/download/v1.0.1/mr-reservoir-mice.zip",
+  "download": "https://github.com/ManuRomera/mr-reservoir-mice/releases/download/v1.0.2/mr-reservoir-mice.zip",
   "readme": "https://github.com/ManuRomera/mr-reservoir-mice#readme",
   "bugs": "https://github.com/ManuRomera/mr-reservoir-mice/issues",
   "license": "https://github.com/ManuRomera/mr-reservoir-mice/blob/main/LICENSE"

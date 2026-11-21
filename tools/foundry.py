@@ -368,16 +368,37 @@ def fl(slug):
     return {"flag": [ID, "slug", slug]}
 
 
+# Dirección: solo lo que puede pasar en cualquier momento va en la barra global; el resto, en la escena donde ocurre.
+GLOBALES = {"disparo", "amartillar"}
+EFECTOS_ESCENA = {
+    "muelle": ["sirenaLejos", "rata", "maullido"],
+    "nave": ["golpes-maletero", "radio", "persiana", "tictac", "sirena"],
+    "mapa-almacen": ["golpes-maletero", "radio", "persiana", "tictac", "sirena"],
+    "callejon": ["sirena", "latido"],
+    "furgoneta": ["radio", "latido", "sirenaLejos"],
+    "cocina": ["chispazo", "rata"],
+    "pasarela": ["sirenaLejos", "maullido", "rata"],
+    "retrete": ["pintada", "latido"],
+    "maletero": ["golpes-maletero", "latido"],
+    "cafeteria": ["tictac"],
+    "apagon": ["chispazo", "latido", "rata"],
+    "lancha": ["motor-lancha", "campanadas", "standoff", "sirena"],
+    "amanecer": ["sirenaLejos"],
+    "comisaria": ["radio", "sirena"],
+}
+_EF = {i: (l, ic) for i, l, ic in EFECTOS}
+assert all(e in _EF for v in EFECTOS_ESCENA.values() for e in v), "efecto de escena desconocido"
+cues = lambda slug: [dict(label=_EF[e][0], icon=_EF[e][1], sound=fl(f"sfx-{e}")) for e in EFECTOS_ESCENA.get(slug, [])]
 dir_escenas = []
 for e, s in zip(ESC, escenas):
     orden, slug, nombre, musica, cap, reparto = e
     dir_escenas.append(dict(ref=fl(slug), order=orden, name=nombre, reading={"uuid": f"JournalEntry.{diarios[0]['_id']}.JournalEntryPage.{PAG_CAP[cap]}"},
-                            music=fl(f"music-{musica}"), motifs=None, cues=[], ambient=fl("ambient-zumbido" if orden in (1, 4, 5, 6, 7, 10) else "ambient-muelle"),
+                            music=fl(f"music-{musica}"), motifs=None, cues=cues(slug), ambient=fl("ambient-zumbido" if orden in (1, 4, 5, 6, 7, 10) else "ambient-muelle"),
                             figures=[dict(ref=fl(a), label="") for a in reparto], handouts=[], notes="", thumb=s["thumb"] or "",
                             stage=dict(eye=0.5, anchors=[[0.2, 0.9], [0.35, 0.92], [0.5, 0.93], [0.65, 0.92], [0.8, 0.9]])))
 direccion = dict(schema=1, id=ID, title="MR- Reservoir Mice", version=VERSION, author="Manu Romera", license="CC BY-NC-SA 4.0",
                  settings=dict(fade=3, motifs=[dict(id=i, label=l, icon=ic, music=fl(f"moods-{i}")) for i, l, ic in MOTIVOS],
-                               effects=[dict(id=i, label=l, icon=ic, sound=fl(f"sfx-{i}")) for i, l, ic in EFECTOS],
+                               effects=[dict(id=i, label=l, icon=ic, sound=fl(f"sfx-{i}")) for i, l, ic in EFECTOS if i in GLOBALES],
                                markers=dict(milestones=[dict(id="rastreador", label="El rastreador de la Caja 4"), dict(id="maletero", label="El guardia del maletero"),
                                                         dict(id="gris", label="El Sr. Gris desaparece"), dict(id="pintada", label="La pintada"),
                                                         dict(id="contrasena", label="La contraseña del barquero"), dict(id="topo", label="Plata, descubierto", public=False)],

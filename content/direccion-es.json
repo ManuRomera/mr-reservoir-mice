@@ -2,7 +2,7 @@
  "schema": 1,
  "id": "mr-reservoir-mice",
  "title": "MR- Reservoir Mice",
- "version": "1.0.1",
+ "version": "1.0.2",
  "author": "Manu Romera",
  "license": "CC BY-NC-SA 4.0",
  "settings": {
@@ -141,174 +141,6 @@
       "sfx-amartillar"
      ]
     }
-   },
-   {
-    "id": "golpes-maletero",
-    "label": "Golpes en el maletero",
-    "icon": "car",
-    "sound": {
-     "flag": [
-      "mr-reservoir-mice",
-      "slug",
-      "sfx-golpes-maletero"
-     ]
-    }
-   },
-   {
-    "id": "persiana",
-    "label": "La persiana",
-    "icon": "warehouse",
-    "sound": {
-     "flag": [
-      "mr-reservoir-mice",
-      "slug",
-      "sfx-persiana"
-     ]
-    }
-   },
-   {
-    "id": "chispazo",
-    "label": "Chispazo de la pila",
-    "icon": "bolt",
-    "sound": {
-     "flag": [
-      "mr-reservoir-mice",
-      "slug",
-      "sfx-chispazo"
-     ]
-    }
-   },
-   {
-    "id": "campanadas",
-    "label": "Doce campanadas",
-    "icon": "bell",
-    "sound": {
-     "flag": [
-      "mr-reservoir-mice",
-      "slug",
-      "sfx-campanadas"
-     ]
-    }
-   },
-   {
-    "id": "sirena",
-    "label": "Sirenas",
-    "icon": "tower-broadcast",
-    "sound": {
-     "flag": [
-      "mr-reservoir-mice",
-      "slug",
-      "sfx-sirena"
-     ]
-    }
-   },
-   {
-    "id": "sirenaLejos",
-    "label": "Sirenas lejanas",
-    "icon": "tower-broadcast",
-    "sound": {
-     "flag": [
-      "mr-reservoir-mice",
-      "slug",
-      "sfx-sirenaLejos"
-     ]
-    }
-   },
-   {
-    "id": "motor-lancha",
-    "label": "Motor de la lancha",
-    "icon": "ship",
-    "sound": {
-     "flag": [
-      "mr-reservoir-mice",
-      "slug",
-      "sfx-motor-lancha"
-     ]
-    }
-   },
-   {
-    "id": "maullido",
-    "label": "El gato del Gigante",
-    "icon": "cat",
-    "sound": {
-     "flag": [
-      "mr-reservoir-mice",
-      "slug",
-      "sfx-maullido"
-     ]
-    }
-   },
-   {
-    "id": "radio",
-    "label": "Radio de la Guardia",
-    "icon": "radio",
-    "sound": {
-     "flag": [
-      "mr-reservoir-mice",
-      "slug",
-      "sfx-radio"
-     ]
-    }
-   },
-   {
-    "id": "rata",
-    "label": "Ratas",
-    "icon": "paw",
-    "sound": {
-     "flag": [
-      "mr-reservoir-mice",
-      "slug",
-      "sfx-rata"
-     ]
-    }
-   },
-   {
-    "id": "latido",
-    "label": "Latido",
-    "icon": "heart-pulse",
-    "sound": {
-     "flag": [
-      "mr-reservoir-mice",
-      "slug",
-      "sfx-latido"
-     ]
-    }
-   },
-   {
-    "id": "tictac",
-    "label": "Tictac",
-    "icon": "clock",
-    "sound": {
-     "flag": [
-      "mr-reservoir-mice",
-      "slug",
-      "sfx-tictac"
-     ]
-    }
-   },
-   {
-    "id": "pintada",
-    "label": "La pintada",
-    "icon": "spray-can",
-    "sound": {
-     "flag": [
-      "mr-reservoir-mice",
-      "slug",
-      "sfx-pintada"
-     ]
-    }
-   },
-   {
-    "id": "standoff",
-    "label": "Duelo",
-    "icon": "gun",
-    "sound": {
-     "flag": [
-      "mr-reservoir-mice",
-      "slug",
-      "sfx-standoff"
-     ]
-    }
    }
   ],
   "markers": {
@@ -364,7 +196,41 @@
     ]
    },
    "motifs": null,
-   "cues": [],
+   "cues": [
+    {
+     "label": "Sirenas lejanas",
+     "icon": "tower-broadcast",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-sirenaLejos"
+      ]
+     }
+    },
+    {
+     "label": "Ratas",
+     "icon": "paw",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-rata"
+      ]
+     }
+    },
+    {
+     "label": "El gato del Gigante",
+     "icon": "cat",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-maullido"
+      ]
+     }
+    }
+   ],
    "ambient": {
     "flag": [
      "mr-reservoir-mice",
@@ -423,7 +289,63 @@
     ]
    },
    "motifs": null,
-   "cues": [],
+   "cues": [
+    {
+     "label": "Golpes en el maletero",
+     "icon": "car",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-golpes-maletero"
+      ]
+     }
+    },
+    {
+     "label": "Radio de la Guardia",
+     "icon": "radio",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-radio"
+      ]
+     }
+    },
+    {
+     "label": "La persiana",
+     "icon": "warehouse",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-persiana"
+      ]
+     }
+    },
+    {
+     "label": "Tictac",
+     "icon": "clock",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-tictac"
+      ]
+     }
+    },
+    {
+     "label": "Sirenas",
+     "icon": "tower-broadcast",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-sirena"
+      ]
+     }
+    }
+   ],
    "ambient": {
     "flag": [
      "mr-reservoir-mice",
@@ -553,7 +475,63 @@
     ]
    },
    "motifs": null,
-   "cues": [],
+   "cues": [
+    {
+     "label": "Golpes en el maletero",
+     "icon": "car",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-golpes-maletero"
+      ]
+     }
+    },
+    {
+     "label": "Radio de la Guardia",
+     "icon": "radio",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-radio"
+      ]
+     }
+    },
+    {
+     "label": "La persiana",
+     "icon": "warehouse",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-persiana"
+      ]
+     }
+    },
+    {
+     "label": "Tictac",
+     "icon": "clock",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-tictac"
+      ]
+     }
+    },
+    {
+     "label": "Sirenas",
+     "icon": "tower-broadcast",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-sirena"
+      ]
+     }
+    }
+   ],
    "ambient": {
     "flag": [
      "mr-reservoir-mice",
@@ -612,7 +590,30 @@
     ]
    },
    "motifs": null,
-   "cues": [],
+   "cues": [
+    {
+     "label": "Sirenas",
+     "icon": "tower-broadcast",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-sirena"
+      ]
+     }
+    },
+    {
+     "label": "Latido",
+     "icon": "heart-pulse",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-latido"
+      ]
+     }
+    }
+   ],
    "ambient": {
     "flag": [
      "mr-reservoir-mice",
@@ -702,7 +703,41 @@
     ]
    },
    "motifs": null,
-   "cues": [],
+   "cues": [
+    {
+     "label": "Radio de la Guardia",
+     "icon": "radio",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-radio"
+      ]
+     }
+    },
+    {
+     "label": "Latido",
+     "icon": "heart-pulse",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-latido"
+      ]
+     }
+    },
+    {
+     "label": "Sirenas lejanas",
+     "icon": "tower-broadcast",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-sirenaLejos"
+      ]
+     }
+    }
+   ],
    "ambient": {
     "flag": [
      "mr-reservoir-mice",
@@ -761,7 +796,30 @@
     ]
    },
    "motifs": null,
-   "cues": [],
+   "cues": [
+    {
+     "label": "Chispazo de la pila",
+     "icon": "bolt",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-chispazo"
+      ]
+     }
+    },
+    {
+     "label": "Ratas",
+     "icon": "paw",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-rata"
+      ]
+     }
+    }
+   ],
    "ambient": {
     "flag": [
      "mr-reservoir-mice",
@@ -820,7 +878,41 @@
     ]
    },
    "motifs": null,
-   "cues": [],
+   "cues": [
+    {
+     "label": "Sirenas lejanas",
+     "icon": "tower-broadcast",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-sirenaLejos"
+      ]
+     }
+    },
+    {
+     "label": "El gato del Gigante",
+     "icon": "cat",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-maullido"
+      ]
+     }
+    },
+    {
+     "label": "Ratas",
+     "icon": "paw",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-rata"
+      ]
+     }
+    }
+   ],
    "ambient": {
     "flag": [
      "mr-reservoir-mice",
@@ -879,7 +971,30 @@
     ]
    },
    "motifs": null,
-   "cues": [],
+   "cues": [
+    {
+     "label": "La pintada",
+     "icon": "spray-can",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-pintada"
+      ]
+     }
+    },
+    {
+     "label": "Latido",
+     "icon": "heart-pulse",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-latido"
+      ]
+     }
+    }
+   ],
    "ambient": {
     "flag": [
      "mr-reservoir-mice",
@@ -938,7 +1053,30 @@
     ]
    },
    "motifs": null,
-   "cues": [],
+   "cues": [
+    {
+     "label": "Golpes en el maletero",
+     "icon": "car",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-golpes-maletero"
+      ]
+     }
+    },
+    {
+     "label": "Latido",
+     "icon": "heart-pulse",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-latido"
+      ]
+     }
+    }
+   ],
    "ambient": {
     "flag": [
      "mr-reservoir-mice",
@@ -1008,7 +1146,19 @@
     ]
    },
    "motifs": null,
-   "cues": [],
+   "cues": [
+    {
+     "label": "Tictac",
+     "icon": "clock",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-tictac"
+      ]
+     }
+    }
+   ],
    "ambient": {
     "flag": [
      "mr-reservoir-mice",
@@ -1138,7 +1288,41 @@
     ]
    },
    "motifs": null,
-   "cues": [],
+   "cues": [
+    {
+     "label": "Chispazo de la pila",
+     "icon": "bolt",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-chispazo"
+      ]
+     }
+    },
+    {
+     "label": "Latido",
+     "icon": "heart-pulse",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-latido"
+      ]
+     }
+    },
+    {
+     "label": "Ratas",
+     "icon": "paw",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-rata"
+      ]
+     }
+    }
+   ],
    "ambient": {
     "flag": [
      "mr-reservoir-mice",
@@ -1197,7 +1381,52 @@
     ]
    },
    "motifs": null,
-   "cues": [],
+   "cues": [
+    {
+     "label": "Motor de la lancha",
+     "icon": "ship",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-motor-lancha"
+      ]
+     }
+    },
+    {
+     "label": "Doce campanadas",
+     "icon": "bell",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-campanadas"
+      ]
+     }
+    },
+    {
+     "label": "Duelo",
+     "icon": "gun",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-standoff"
+      ]
+     }
+    },
+    {
+     "label": "Sirenas",
+     "icon": "tower-broadcast",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-sirena"
+      ]
+     }
+    }
+   ],
    "ambient": {
     "flag": [
      "mr-reservoir-mice",
@@ -1326,7 +1555,19 @@
     ]
    },
    "motifs": null,
-   "cues": [],
+   "cues": [
+    {
+     "label": "Sirenas lejanas",
+     "icon": "tower-broadcast",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-sirenaLejos"
+      ]
+     }
+    }
+   ],
    "ambient": {
     "flag": [
      "mr-reservoir-mice",
@@ -1385,7 +1626,30 @@
     ]
    },
    "motifs": null,
-   "cues": [],
+   "cues": [
+    {
+     "label": "Radio de la Guardia",
+     "icon": "radio",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-radio"
+      ]
+     }
+    },
+    {
+     "label": "Sirenas",
+     "icon": "tower-broadcast",
+     "sound": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "sfx-sirena"
+      ]
+     }
+    }
+   ],
    "ambient": {
     "flag": [
      "mr-reservoir-mice",

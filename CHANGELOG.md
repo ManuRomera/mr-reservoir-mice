@@ -1,5 +1,9 @@
 # Cambios
 
+## 1.0.2
+
+- **Barra de MR- Dirección ordenada por escena.** Solo «Disparo» y «Amartillar» están siempre a mano; cada escena muestra únicamente sus propios efectos (la lancha y las campanadas en Medianoche, los golpes del maletero en la nave y el maletero, el chispazo en la cocina y el apagón…). El plano del almacén usa los de la nave.
+
 ## 1.0.1
 
 - **Texto legible en los diarios** con tema claro y oscuro: la guía, los dosieres y la libreta llevan su propio papel y tinta y ya no heredan el color del tema de Foundry.
