@@ -1,0 +1,147 @@
+/* Reservoir Mice · libro A4. Cine negro ratonil: papel crema, amarillo Tarantino, sangre y tinta. */
+@font-face { font-family: Anton; src: url("ASSETS/fonts/Anton-Regular.ttf"); }
+@font-face { font-family: Bebas; src: url("ASSETS/fonts/BebasNeue-Regular.ttf"); }
+@font-face { font-family: Maquina; src: url("ASSETS/fonts/SpecialElite-Regular.ttf"); }
+@font-face { font-family: Crimson; src: url("ASSETS/fonts/CrimsonText-Regular.ttf"); }
+@font-face { font-family: Crimson; font-weight: 700; src: url("ASSETS/fonts/CrimsonText-Bold.ttf"); }
+@font-face { font-family: Crimson; font-style: italic; src: url("ASSETS/fonts/CrimsonText-Italic.ttf"); }
+@font-face { font-family: Crimson; font-style: italic; font-weight: 700; src: url("ASSETS/fonts/CrimsonText-BoldItalic.ttf"); }
+:root { --am: #f2c21b; --sa: #8e2a1c; --ro: #b81d13; --ti: #161412; --pa: #f1e8d2; --pa2: #e6d9b8; --gr: #5f5a52; }
+
+@page { size: A4; margin: 17mm 15mm 19mm 15mm;
+  @bottom-left { content: "RESERVOIR MICE"; font-family: Bebas; font-size: 9pt; letter-spacing: .2em; color: #8e2a1c; }
+  @bottom-right { content: counter(page); font-family: Anton; font-size: 11pt; color: #161412; } }
+@page sangre { margin: 0; @bottom-left { content: none; } @bottom-right { content: none; } }
+* { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+html, body { margin: 0; background: var(--pa); color: var(--ti); }
+body { font-family: Crimson, serif; font-size: 10.6pt; line-height: 1.34; hyphens: manual; }
+p { margin: 0 0 .45em; text-align: justify; orphans: 2; widows: 2; }
+strong, b { font-weight: 700; }
+.kick { font-family: Bebas; letter-spacing: .18em; color: var(--sa); font-size: 11pt; margin: 0; text-align: left; }
+
+/* ---------- portada, láminas y contraportada a sangre ---------- */
+.portada, .lamina, .contra { page: sangre; break-before: page; break-after: page; height: 297mm; width: 210mm; position: relative; overflow: hidden; background: var(--ti); }
+.portada > img, .lamina > img, .contra > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.portada .titulo { position: absolute; top: 9mm; left: 0; right: 0; text-align: center; }
+.portada h1 { font-family: Anton; font-weight: normal; font-size: 88pt; line-height: 1.02; margin: 0; color: var(--pa); text-transform: uppercase; letter-spacing: .01em;
+  -webkit-text-stroke: 1.6mm var(--ti); paint-order: stroke fill; text-shadow: 1.8mm 1.8mm 0 var(--sa), 1.8mm 1.8mm 0 var(--ti); }
+.portada .titulo p { font-family: Maquina; font-size: 14pt; margin: 3mm 0 0; text-align: center; background: var(--ti); color: var(--am); display: inline-block; padding: 1.5mm 4mm; }
+.portada .pie { position: absolute; left: 0; right: 0; bottom: 0; padding: 6mm 10mm; display: flex; align-items: center; justify-content: space-between;
+  background: linear-gradient(transparent, rgba(10, 8, 6, .92) 40%); color: var(--pa); font-family: Bebas; font-size: 15pt; letter-spacing: .08em; }
+.portada .pie img { height: 16mm; }
+.lamina.parte > div { position: absolute; left: 12mm; right: 12mm; bottom: 14mm; background: var(--am); border: 3mm solid var(--ti); padding: 6mm 8mm; box-shadow: 4mm 4mm 0 var(--ti); }
+.lamina.parte h1 { font-family: Anton; font-weight: normal; font-size: 52pt; margin: 0; line-height: 1; }
+.lamina.parte p { font-size: 13pt; margin: 2mm 0 0; }
+.lamina.mapa { background: var(--pa); }
+.lamina.mapa > img { position: absolute; inset: 10mm 8mm 24mm; width: calc(100% - 16mm); height: calc(100% - 34mm); object-fit: contain; }
+.lamina.mapa p { position: absolute; bottom: 12mm; left: 0; right: 0; text-align: center; font-family: Maquina; font-size: 11pt; }
+.contra > div { position: absolute; left: 14mm; right: 14mm; bottom: 16mm; background: rgba(22, 20, 18, .9); color: var(--pa); padding: 8mm 9mm; border-top: 2.5mm solid var(--am); }
+.contra h2 { font-family: Anton; font-weight: normal; font-size: 30pt; color: var(--am); margin: 0 0 3mm; }
+.contra p { font-size: 12.5pt; }
+.contra .logo { height: 15mm; display: block; margin: 4mm 0 0 auto; }
+
+/* ---------- créditos e índice ---------- */
+.pag { break-before: page; }
+.creditos .gancho { background: var(--ti); color: var(--pa); padding: 7mm 8mm; border-left: 3mm solid var(--am); margin-bottom: 6mm; }
+.creditos .gancho .kick { color: var(--am); }
+.creditos .grande { font-family: Maquina; font-size: 13pt; line-height: 1.45; text-align: left; margin: 2mm 0 0; }
+.creditos h2 { font-family: Anton; font-weight: normal; font-size: 26pt; margin: 0 0 2mm; border-bottom: 1.6mm solid var(--am); }
+.indice { list-style: none; padding: 0; margin: 0 0 6mm; column-count: 2; column-gap: 8mm; }
+.indice li { display: flex; align-items: baseline; gap: 2.5mm; padding: 1.1mm 0; border-bottom: .3mm dotted var(--gr); break-inside: avoid; }
+.indice span { font-family: Anton; color: var(--sa); width: 7mm; }
+.indice b { font-family: Bebas; font-weight: normal; font-size: 13pt; letter-spacing: .04em; flex: 1; }
+.indice i { font-family: Anton; font-style: normal; }
+.cred { font-size: 9.6pt; color: #3a352f; border-top: .4mm solid var(--ti); padding-top: 3mm; }
+
+/* ---------- capítulos ---------- */
+.cap { break-before: auto; margin-top: 9mm; }
+.creditos + .cap, .cap.nueva { break-before: page; margin-top: 0; }
+.cap > header { break-inside: avoid; break-after: avoid; margin-bottom: 4mm; border-bottom: 2mm solid var(--am); padding-bottom: 1mm; }
+.cap > header h1 { font-family: Anton; font-weight: normal; font-size: 33pt; line-height: 1.02; margin: .5mm 0 0; letter-spacing: .005em; }
+.cols { column-count: 2; column-gap: 7mm; }
+.cols.corto { column-count: 1; }
+.cap > header + .cols > p:first-child::first-letter { font-family: Anton; float: left; font-size: 34pt; line-height: .9; padding: 1mm 1.6mm 0 1.4mm; margin: .8mm 1.6mm 0 0; background: var(--am); color: var(--ti); }
+.cols h2 { font-family: Bebas; font-weight: normal; font-size: 18pt; letter-spacing: .04em; color: var(--sa); margin: 3.5mm 0 1mm; break-after: avoid; line-height: 1.05; }
+.cols h3, .cap > .ancho > h3, .cap > .tabla > h3 { font-family: Bebas; font-weight: normal; font-size: 14pt; letter-spacing: .05em; margin: 3mm 0 1mm; break-after: avoid; }
+.cols ul, .cols ol { margin: 0 0 .5em; padding-left: 4.5mm; }
+.cols li { margin-bottom: .2em; text-align: justify; }
+blockquote.mrrm-lectura { margin: 2mm 0 3mm; padding: 2.5mm 3.5mm; background: #fff1c4; border-left: 1.6mm solid var(--am); font-style: italic; break-inside: avoid; }
+blockquote.mrrm-lectura p { margin: 0 0 .4em; }
+.mrrm-regla, .mrrm-caja { border: .6mm solid var(--ti); background: #fffaf0; padding: 2.5mm 3.5mm; margin: 2.5mm 1.5mm 3.5mm 0; box-shadow: 1.5mm 1.5mm 0 var(--am); break-inside: avoid; }
+.mrrm-regla { box-shadow: 1.5mm 1.5mm 0 var(--sa); }
+.mrrm-regla h4, .mrrm-caja h4 { font-family: Bebas; font-weight: normal; font-size: 14pt; letter-spacing: .04em; margin: 0 0 1mm; color: var(--sa); }
+.mrrm-regla p:last-child, .mrrm-caja p:last-child { margin-bottom: 0; }
+.mrrm-rejilla { column-span: all; display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; margin: 2mm 0 4mm; }
+.mrrm-rejilla p { background: var(--ti); color: var(--pa); padding: 3mm 3.5mm; margin: 0; text-align: left; }
+.mrrm-rejilla strong { display: block; font-family: Bebas; font-weight: normal; font-size: 15pt; color: var(--am); letter-spacing: .05em; }
+table { width: 100%; border-collapse: collapse; font-size: 9.3pt; line-height: 1.25; margin: 1mm 0 3mm; background: #fffaf0; }
+th { background: var(--ti); color: var(--am); font-family: Bebas; font-weight: normal; font-size: 11pt; letter-spacing: .05em; text-align: left; padding: 1mm 1.5mm; }
+td { padding: 1.1mm 1.5mm; border-bottom: .25mm solid var(--pa2); vertical-align: top; text-align: left; }
+tr { break-inside: avoid; }
+.ancho, .tabla.ancho, .cols table:has(th:nth-child(3)) { column-span: all; }
+.arsenal td.ic { width: 12mm; } .arsenal td.ic img { width: 11mm; height: 11mm; object-fit: contain; }
+.arsenal td.dano { font-family: Anton; color: var(--sa); white-space: nowrap; }
+.tabla td.n { font-family: Anton; color: var(--sa); width: 6mm; }
+.tabla h3 { margin-top: 2mm; }
+figure { margin: 0; break-inside: avoid; }
+figure img { display: block; width: 100%; border: .8mm solid var(--ti); }
+figure.fig-ancha { column-span: all; margin: 1mm 0 4mm; }
+figure.fig-ancha img { max-height: 118mm; object-fit: cover; }
+figure.fig-dcha { margin: 1mm 0 3mm; }
+figure.fig-dcha img { box-shadow: 1.5mm 1.5mm 0 var(--am); }
+figcaption { font-family: Maquina; font-size: 8.5pt; color: var(--gr); margin-top: 1mm; text-align: center; }
+.pnj { display: flex; gap: 3mm; break-inside: avoid; margin: 0 0 3mm; padding-bottom: 2.5mm; border-bottom: .3mm dashed var(--gr); }
+.pnj img { width: 22mm; height: 29mm; object-fit: cover; object-position: top; border: .6mm solid var(--ti); flex: none; background: var(--pa2); }
+.pnj h4 { font-family: Bebas; font-weight: normal; font-size: 15pt; margin: 0; color: var(--sa); letter-spacing: .03em; }
+.pnj .st { font-family: Anton; font-size: 8.6pt; text-align: left; margin-bottom: .6mm; letter-spacing: .02em; }
+.pnj p { font-size: 9.6pt; margin-bottom: .6mm; }
+.pnj .voz { color: #3a352f; }
+
+/* ---------- dosieres ---------- */
+.dosier { height: 258mm; background: #ead9b0; border: .4mm solid #b19a6a; padding: 10mm 11mm; position: relative; font-family: Maquina; font-size: 10.4pt; line-height: 1.5; overflow: hidden; }
+.dosier p { text-align: left; }
+.dosier h1 { font-family: Anton; font-weight: normal; font-size: 40pt; margin: 1mm 0 0; line-height: 1; }
+.dosier .sub { font-size: 11pt; color: var(--sa); }
+.dosier h3 { font-family: Bebas; font-weight: normal; font-size: 15pt; letter-spacing: .05em; color: var(--sa); border-bottom: .5mm solid var(--ti); margin: 4mm 0 1.5mm; }
+.dosier .polaroid { float: right; width: 52mm; height: 66mm; object-fit: cover; object-position: top; border: 3mm solid #fff; border-bottom-width: 9mm; box-shadow: 1mm 1.5mm 3mm rgba(0, 0, 0, .35); transform: rotate(3deg); margin: 0 0 4mm 6mm; }
+.dosier .sello { position: absolute; top: 62mm; right: 6mm; z-index: 2; font-family: Bebas; font-size: 22pt; letter-spacing: .14em; color: var(--ro); border: 1mm solid var(--ro); padding: 0 3mm; transform: rotate(-7deg); opacity: .85; text-transform: uppercase; }
+.dosier dl { display: grid; grid-template-columns: 26mm 1fr; gap: 1.2mm 3mm; margin: 0; font-size: 9.8pt; }
+.dosier dt { font-weight: bold; color: var(--sa); }
+.dosier dd { margin: 0; }
+.ficha { height: 258mm; position: relative; padding-left: 70mm; isolation: isolate; }
+.ficha .cuerpo { position: absolute; left: -4mm; bottom: 0; width: 78mm; height: 215mm; object-fit: contain; object-position: bottom center; }
+.ficha::before { content: ""; position: absolute; left: 0; top: 30mm; width: 62mm; bottom: 6mm; background: var(--am); transform: skewY(-3deg); z-index: -1; }
+.ficha h1 { font-family: Anton; font-weight: normal; font-size: 40pt; margin: 0; line-height: 1; }
+.ficha .sub { font-family: Bebas; font-size: 14pt; letter-spacing: .06em; color: var(--sa); margin: 0 0 3mm; }
+.ficha .stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 2mm; margin-bottom: 3mm; }
+.ficha .stats div { background: var(--ti); color: var(--pa); text-align: center; padding: 1.5mm 0; border-bottom: 1.2mm solid var(--am); }
+.ficha .stats span { display: block; font-family: Bebas; font-size: 11pt; letter-spacing: .1em; color: var(--am); }
+.ficha .stats b { font-family: Anton; font-weight: normal; font-size: 22pt; line-height: 1; }
+.ficha .aspecto { font-size: 10.4pt; }
+.ficha h3 { font-family: Bebas; font-weight: normal; font-size: 16pt; letter-spacing: .05em; margin: 3mm 0 1.5mm; border-bottom: .6mm solid var(--ti); }
+.ficha .inv { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5mm; }
+.cas { border: .6mm solid var(--ti); background: #fffaf0; padding: 2mm 2.5mm; min-height: 44mm; position: relative; display: flex; flex-direction: column; gap: 1mm; box-shadow: 1mm 1mm 0 var(--am); }
+.cas .lbl { font-family: Bebas; font-size: 10pt; letter-spacing: .12em; color: var(--sa); }
+.cas img { width: 17mm; height: 17mm; object-fit: contain; position: absolute; top: 2mm; right: 2mm; }
+.cas strong { font-family: Bebas; font-weight: normal; font-size: 13pt; line-height: 1.05; padding-right: 19mm; letter-spacing: .02em; }
+.cas small { font-size: 8.6pt; line-height: 1.25; }
+.cas.vacia { background: repeating-linear-gradient(135deg, #fffaf0 0 3mm, #f4ead2 3mm 6mm); }
+.cas .libre { font-family: Maquina; color: var(--gr); font-size: 11pt; }
+.ficha .nota { font-family: Maquina; font-size: 9pt; color: var(--gr); margin-top: 2mm; }
+
+/* ---------- apéndice ---------- */
+.apendice h1 { font-family: Anton; font-weight: normal; font-size: 24pt; margin: 1mm 0 2mm; border-bottom: 1.6mm solid var(--am); }
+.apendice .ayuda { display: block; width: 160mm; margin-left: auto; margin-right: auto; border: .8mm solid var(--ti); margin-bottom: 5mm; }
+.tarjetas { display: grid; grid-template-columns: repeat(3, 1fr); }
+.tarjeta { border: .4mm dashed var(--gr); padding: 3mm; min-height: 76mm; position: relative; background: #fffaf0; }
+.tarjeta img { width: 20mm; height: 20mm; object-fit: contain; float: right; margin: 0 0 1mm 2mm; }
+.tarjeta h4 { font-family: Bebas; font-weight: normal; font-size: 15pt; margin: 0 0 1mm; color: var(--sa); line-height: 1.05; }
+.tarjeta p { font-size: 9.4pt; text-align: left; }
+.tarjeta .q { font-size: 9pt; }
+.tarjeta span { position: absolute; bottom: 2mm; left: 3mm; font-family: Bebas; letter-spacing: .12em; font-size: 10pt; background: var(--ti); color: var(--am); padding: 0 2mm; }
+.tarjeta.clave span { background: var(--sa); color: var(--pa); }
+.carnes { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; }
+.carnes img { width: 100%; border: .4mm dashed var(--gr); }
+
+.ancho > h3, .tabla > h3 { break-after: avoid; }
+.ancho table thead { display: table-header-group; }

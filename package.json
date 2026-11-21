@@ -1,0 +1,16 @@
+{
+  "name": "mr-reservoir-mice",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "datos": "python3 tools/foundry.py",
+    "arte": "python3 tools/arte.py",
+    "libro": "python3 tools/libro.py",
+    "build": "node scripts/build.mjs"
+  },
+  "devDependencies": {
+    "classic-level": "2.0.0",
+    "archiver": "7.0.1"
+  }
+}

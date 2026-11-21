@@ -1,0 +1,1427 @@
+{
+ "schema": 1,
+ "id": "mr-reservoir-mice",
+ "title": "MR- Reservoir Mice",
+ "version": "1.0.0",
+ "author": "Manu Romera",
+ "license": "CC BY-NC-SA 4.0",
+ "settings": {
+  "fade": 3,
+  "motifs": [
+   {
+    "id": "tension",
+    "label": "Tensión",
+    "icon": "hourglass-half",
+    "music": {
+     "flag": [
+      "mr-reservoir-mice",
+      "slug",
+      "moods-tension"
+     ]
+    }
+   },
+   {
+    "id": "paranoia",
+    "label": "Paranoia",
+    "icon": "eye",
+    "music": {
+     "flag": [
+      "mr-reservoir-mice",
+      "slug",
+      "moods-paranoia"
+     ]
+    }
+   },
+   {
+    "id": "persecucion",
+    "label": "Persecución",
+    "icon": "car-burst",
+    "music": {
+     "flag": [
+      "mr-reservoir-mice",
+      "slug",
+      "moods-persecucion"
+     ]
+    }
+   },
+   {
+    "id": "standoff",
+    "label": "Duelo",
+    "icon": "gun",
+    "music": {
+     "flag": [
+      "mr-reservoir-mice",
+      "slug",
+      "moods-standoff"
+     ]
+    }
+   },
+   {
+    "id": "calma",
+    "label": "Calma tensa",
+    "icon": "smoking",
+    "music": {
+     "flag": [
+      "mr-reservoir-mice",
+      "slug",
+      "moods-calma"
+     ]
+    }
+   },
+   {
+    "id": "misterio",
+    "label": "Misterio",
+    "icon": "user-secret",
+    "music": {
+     "flag": [
+      "mr-reservoir-mice",
+      "slug",
+      "moods-misterio"
+     ]
+    }
+   },
+   {
+    "id": "oscuridad",
+    "label": "A oscuras",
+    "icon": "lightbulb",
+    "music": {
+     "flag": [
+      "mr-reservoir-mice",
+      "slug",
+      "moods-oscuridad"
+     ]
+    }
+   },
+   {
+    "id": "triunfo",
+    "label": "Triunfo",
+    "icon": "sack-dollar",
+    "music": {
+     "flag": [
+      "mr-reservoir-mice",
+      "slug",
+      "moods-triunfo"
+     ]
+    }
+   },
+   {
+    "id": "derrota",
+    "label": "Derrota",
+    "icon": "skull",
+    "music": {
+     "flag": [
+      "mr-reservoir-mice",
+      "slug",
+      "moods-derrota"
+     ]
+    }
+   }
+  ],
+  "effects": [
+   {
+    "id": "disparo",
+    "label": "Disparo",
+    "icon": "gun",
+    "sound": {
+     "flag": [
+      "mr-reservoir-mice",
+      "slug",
+      "sfx-disparo"
+     ]
+    }
+   },
+   {
+    "id": "amartillar",
+    "label": "Amartillar",
+    "icon": "hand-point-right",
+    "sound": {
+     "flag": [
+      "mr-reservoir-mice",
+      "slug",
+      "sfx-amartillar"
+     ]
+    }
+   },
+   {
+    "id": "golpes-maletero",
+    "label": "Golpes en el maletero",
+    "icon": "car",
+    "sound": {
+     "flag": [
+      "mr-reservoir-mice",
+      "slug",
+      "sfx-golpes-maletero"
+     ]
+    }
+   },
+   {
+    "id": "persiana",
+    "label": "La persiana",
+    "icon": "warehouse",
+    "sound": {
+     "flag": [
+      "mr-reservoir-mice",
+      "slug",
+      "sfx-persiana"
+     ]
+    }
+   },
+   {
+    "id": "chispazo",
+    "label": "Chispazo de la pila",
+    "icon": "bolt",
+    "sound": {
+     "flag": [
+      "mr-reservoir-mice",
+      "slug",
+      "sfx-chispazo"
+     ]
+    }
+   },
+   {
+    "id": "campanadas",
+    "label": "Doce campanadas",
+    "icon": "bell",
+    "sound": {
+     "flag": [
+      "mr-reservoir-mice",
+      "slug",
+      "sfx-campanadas"
+     ]
+    }
+   },
+   {
+    "id": "sirena",
+    "label": "Sirenas",
+    "icon": "tower-broadcast",
+    "sound": {
+     "flag": [
+      "mr-reservoir-mice",
+      "slug",
+      "sfx-sirena"
+     ]
+    }
+   },
+   {
+    "id": "sirenaLejos",
+    "label": "Sirenas lejanas",
+    "icon": "tower-broadcast",
+    "sound": {
+     "flag": [
+      "mr-reservoir-mice",
+      "slug",
+      "sfx-sirenaLejos"
+     ]
+    }
+   },
+   {
+    "id": "motor-lancha",
+    "label": "Motor de la lancha",
+    "icon": "ship",
+    "sound": {
+     "flag": [
+      "mr-reservoir-mice",
+      "slug",
+      "sfx-motor-lancha"
+     ]
+    }
+   },
+   {
+    "id": "maullido",
+    "label": "El gato del Gigante",
+    "icon": "cat",
+    "sound": {
+     "flag": [
+      "mr-reservoir-mice",
+      "slug",
+      "sfx-maullido"
+     ]
+    }
+   },
+   {
+    "id": "radio",
+    "label": "Radio de la Guardia",
+    "icon": "radio",
+    "sound": {
+     "flag": [
+      "mr-reservoir-mice",
+      "slug",
+      "sfx-radio"
+     ]
+    }
+   },
+   {
+    "id": "rata",
+    "label": "Ratas",
+    "icon": "paw",
+    "sound": {
+     "flag": [
+      "mr-reservoir-mice",
+      "slug",
+      "sfx-rata"
+     ]
+    }
+   },
+   {
+    "id": "latido",
+    "label": "Latido",
+    "icon": "heart-pulse",
+    "sound": {
+     "flag": [
+      "mr-reservoir-mice",
+      "slug",
+      "sfx-latido"
+     ]
+    }
+   },
+   {
+    "id": "tictac",
+    "label": "Tictac",
+    "icon": "clock",
+    "sound": {
+     "flag": [
+      "mr-reservoir-mice",
+      "slug",
+      "sfx-tictac"
+     ]
+    }
+   },
+   {
+    "id": "pintada",
+    "label": "La pintada",
+    "icon": "spray-can",
+    "sound": {
+     "flag": [
+      "mr-reservoir-mice",
+      "slug",
+      "sfx-pintada"
+     ]
+    }
+   },
+   {
+    "id": "standoff",
+    "label": "Duelo",
+    "icon": "gun",
+    "sound": {
+     "flag": [
+      "mr-reservoir-mice",
+      "slug",
+      "sfx-standoff"
+     ]
+    }
+   }
+  ],
+  "markers": {
+   "milestones": [
+    {
+     "id": "rastreador",
+     "label": "El rastreador de la Caja 4"
+    },
+    {
+     "id": "maletero",
+     "label": "El guardia del maletero"
+    },
+    {
+     "id": "gris",
+     "label": "El Sr. Gris desaparece"
+    },
+    {
+     "id": "pintada",
+     "label": "La pintada"
+    },
+    {
+     "id": "contrasena",
+     "label": "La contraseña del barquero"
+    },
+    {
+     "id": "topo",
+     "label": "Plata, descubierto",
+     "public": false
+    }
+   ],
+   "clocks": []
+  }
+ },
+ "scenes": [
+  {
+   "ref": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "muelle"
+    ]
+   },
+   "order": 0,
+   "name": "El muelle",
+   "reading": {
+    "uuid": "JournalEntry.LCMke4W22UFrzMOx.JournalEntryPage.omSXM10Yac8GB2vb"
+   },
+   "music": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "music-tema"
+    ]
+   },
+   "motifs": null,
+   "cues": [],
+   "ambient": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "ambient-muelle"
+    ]
+   },
+   "figures": [],
+   "handouts": [],
+   "notes": "",
+   "thumb": "modules/mr-reservoir-mice/assets/scenes/thumbs/muelle.webp",
+   "stage": {
+    "eye": 0.5,
+    "anchors": [
+     [
+      0.2,
+      0.9
+     ],
+     [
+      0.35,
+      0.92
+     ],
+     [
+      0.5,
+      0.93
+     ],
+     [
+      0.65,
+      0.92
+     ],
+     [
+      0.8,
+      0.9
+     ]
+    ]
+   }
+  },
+  {
+   "ref": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "nave"
+    ]
+   },
+   "order": 1,
+   "name": "A1 · La nave principal",
+   "reading": {
+    "uuid": "JournalEntry.LCMke4W22UFrzMOx.JournalEntryPage.aw5uC2aa9G1dopj8"
+   },
+   "music": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "music-espera"
+    ]
+   },
+   "motifs": null,
+   "cues": [],
+   "ambient": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "ambient-zumbido"
+    ]
+   },
+   "figures": [
+    {
+     "ref": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "negro"
+      ]
+     },
+     "label": ""
+    },
+    {
+     "ref": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "rojo"
+      ]
+     },
+     "label": ""
+    },
+    {
+     "ref": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "verde"
+      ]
+     },
+     "label": ""
+    },
+    {
+     "ref": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "purpura"
+      ]
+     },
+     "label": ""
+    },
+    {
+     "ref": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "beige"
+      ]
+     },
+     "label": ""
+    },
+    {
+     "ref": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "plata"
+      ]
+     },
+     "label": ""
+    },
+    {
+     "ref": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "gris"
+      ]
+     },
+     "label": ""
+    }
+   ],
+   "handouts": [],
+   "notes": "",
+   "thumb": "modules/mr-reservoir-mice/assets/scenes/thumbs/nave.webp",
+   "stage": {
+    "eye": 0.5,
+    "anchors": [
+     [
+      0.2,
+      0.9
+     ],
+     [
+      0.35,
+      0.92
+     ],
+     [
+      0.5,
+      0.93
+     ],
+     [
+      0.65,
+      0.92
+     ],
+     [
+      0.8,
+      0.9
+     ]
+    ]
+   }
+  },
+  {
+   "ref": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "mapa-almacen"
+    ]
+   },
+   "order": 2,
+   "name": "Plano del almacén",
+   "reading": {
+    "uuid": "JournalEntry.LCMke4W22UFrzMOx.JournalEntryPage.aw5uC2aa9G1dopj8"
+   },
+   "music": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "music-espera"
+    ]
+   },
+   "motifs": null,
+   "cues": [],
+   "ambient": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "ambient-muelle"
+    ]
+   },
+   "figures": [],
+   "handouts": [],
+   "notes": "",
+   "thumb": "modules/mr-reservoir-mice/assets/scenes/thumbs/mapa-almacen.webp",
+   "stage": {
+    "eye": 0.5,
+    "anchors": [
+     [
+      0.2,
+      0.9
+     ],
+     [
+      0.35,
+      0.92
+     ],
+     [
+      0.5,
+      0.93
+     ],
+     [
+      0.65,
+      0.92
+     ],
+     [
+      0.8,
+      0.9
+     ]
+    ]
+   }
+  },
+  {
+   "ref": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "callejon"
+    ]
+   },
+   "order": 3,
+   "name": "Flashback 1 · La huida",
+   "reading": {
+    "uuid": "JournalEntry.LCMke4W22UFrzMOx.JournalEntryPage.omSXM10Yac8GB2vb"
+   },
+   "music": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "music-huida"
+    ]
+   },
+   "motifs": null,
+   "cues": [],
+   "ambient": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "ambient-muelle"
+    ]
+   },
+   "figures": [
+    {
+     "ref": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "verde"
+      ]
+     },
+     "label": ""
+    },
+    {
+     "ref": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "rojo"
+      ]
+     },
+     "label": ""
+    },
+    {
+     "ref": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "negro"
+      ]
+     },
+     "label": ""
+    }
+   ],
+   "handouts": [],
+   "notes": "",
+   "thumb": "modules/mr-reservoir-mice/assets/scenes/thumbs/callejon.webp",
+   "stage": {
+    "eye": 0.5,
+    "anchors": [
+     [
+      0.2,
+      0.9
+     ],
+     [
+      0.35,
+      0.92
+     ],
+     [
+      0.5,
+      0.93
+     ],
+     [
+      0.65,
+      0.92
+     ],
+     [
+      0.8,
+      0.9
+     ]
+    ]
+   }
+  },
+  {
+   "ref": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "furgoneta"
+    ]
+   },
+   "order": 4,
+   "name": "El botín",
+   "reading": {
+    "uuid": "JournalEntry.LCMke4W22UFrzMOx.JournalEntryPage.quGR7Fz9gYNlFYXl"
+   },
+   "music": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "music-botin"
+    ]
+   },
+   "motifs": null,
+   "cues": [],
+   "ambient": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "ambient-zumbido"
+    ]
+   },
+   "figures": [],
+   "handouts": [],
+   "notes": "",
+   "thumb": "modules/mr-reservoir-mice/assets/scenes/thumbs/furgoneta.webp",
+   "stage": {
+    "eye": 0.5,
+    "anchors": [
+     [
+      0.2,
+      0.9
+     ],
+     [
+      0.35,
+      0.92
+     ],
+     [
+      0.5,
+      0.93
+     ],
+     [
+      0.65,
+      0.92
+     ],
+     [
+      0.8,
+      0.9
+     ]
+    ]
+   }
+  },
+  {
+   "ref": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "cocina"
+    ]
+   },
+   "order": 5,
+   "name": "A4 · La cocina y la pila",
+   "reading": {
+    "uuid": "JournalEntry.LCMke4W22UFrzMOx.JournalEntryPage.aw5uC2aa9G1dopj8"
+   },
+   "music": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "music-espera"
+    ]
+   },
+   "motifs": null,
+   "cues": [],
+   "ambient": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "ambient-zumbido"
+    ]
+   },
+   "figures": [],
+   "handouts": [],
+   "notes": "",
+   "thumb": "modules/mr-reservoir-mice/assets/scenes/thumbs/cocina.webp",
+   "stage": {
+    "eye": 0.5,
+    "anchors": [
+     [
+      0.2,
+      0.9
+     ],
+     [
+      0.35,
+      0.92
+     ],
+     [
+      0.5,
+      0.93
+     ],
+     [
+      0.65,
+      0.92
+     ],
+     [
+      0.8,
+      0.9
+     ]
+    ]
+   }
+  },
+  {
+   "ref": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "pasarela"
+    ]
+   },
+   "order": 6,
+   "name": "A5 · La pasarela",
+   "reading": {
+    "uuid": "JournalEntry.LCMke4W22UFrzMOx.JournalEntryPage.aw5uC2aa9G1dopj8"
+   },
+   "music": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "music-espera"
+    ]
+   },
+   "motifs": null,
+   "cues": [],
+   "ambient": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "ambient-zumbido"
+    ]
+   },
+   "figures": [],
+   "handouts": [],
+   "notes": "",
+   "thumb": "modules/mr-reservoir-mice/assets/scenes/thumbs/pasarela.webp",
+   "stage": {
+    "eye": 0.5,
+    "anchors": [
+     [
+      0.2,
+      0.9
+     ],
+     [
+      0.35,
+      0.92
+     ],
+     [
+      0.5,
+      0.93
+     ],
+     [
+      0.65,
+      0.92
+     ],
+     [
+      0.8,
+      0.9
+     ]
+    ]
+   }
+  },
+  {
+   "ref": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "retrete"
+    ]
+   },
+   "order": 7,
+   "name": "A2 · El retrete",
+   "reading": {
+    "uuid": "JournalEntry.LCMke4W22UFrzMOx.JournalEntryPage.5tseLQebUnFGMSAx"
+   },
+   "music": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "music-desague"
+    ]
+   },
+   "motifs": null,
+   "cues": [],
+   "ambient": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "ambient-zumbido"
+    ]
+   },
+   "figures": [],
+   "handouts": [],
+   "notes": "",
+   "thumb": "modules/mr-reservoir-mice/assets/scenes/thumbs/retrete.webp",
+   "stage": {
+    "eye": 0.5,
+    "anchors": [
+     [
+      0.2,
+      0.9
+     ],
+     [
+      0.35,
+      0.92
+     ],
+     [
+      0.5,
+      0.93
+     ],
+     [
+      0.65,
+      0.92
+     ],
+     [
+      0.8,
+      0.9
+     ]
+    ]
+   }
+  },
+  {
+   "ref": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "maletero"
+    ]
+   },
+   "order": 8,
+   "name": "El maletero",
+   "reading": {
+    "uuid": "JournalEntry.LCMke4W22UFrzMOx.JournalEntryPage.5tseLQebUnFGMSAx"
+   },
+   "music": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "music-desague"
+    ]
+   },
+   "motifs": null,
+   "cues": [],
+   "ambient": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "ambient-muelle"
+    ]
+   },
+   "figures": [
+    {
+     "ref": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "pescador"
+      ]
+     },
+     "label": ""
+    }
+   ],
+   "handouts": [],
+   "notes": "",
+   "thumb": "modules/mr-reservoir-mice/assets/scenes/thumbs/maletero.webp",
+   "stage": {
+    "eye": 0.5,
+    "anchors": [
+     [
+      0.2,
+      0.9
+     ],
+     [
+      0.35,
+      0.92
+     ],
+     [
+      0.5,
+      0.93
+     ],
+     [
+      0.65,
+      0.92
+     ],
+     [
+      0.8,
+      0.9
+     ]
+    ]
+   }
+  },
+  {
+   "ref": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "cafeteria"
+    ]
+   },
+   "order": 9,
+   "name": "Flashback 2 · La Lata de Sardinas",
+   "reading": {
+    "uuid": "JournalEntry.LCMke4W22UFrzMOx.JournalEntryPage.5tseLQebUnFGMSAx"
+   },
+   "music": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "music-sardinas"
+    ]
+   },
+   "motifs": null,
+   "cues": [],
+   "ambient": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "ambient-muelle"
+    ]
+   },
+   "figures": [
+    {
+     "ref": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "negro"
+      ]
+     },
+     "label": ""
+    },
+    {
+     "ref": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "rojo"
+      ]
+     },
+     "label": ""
+    },
+    {
+     "ref": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "verde"
+      ]
+     },
+     "label": ""
+    },
+    {
+     "ref": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "purpura"
+      ]
+     },
+     "label": ""
+    },
+    {
+     "ref": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "beige"
+      ]
+     },
+     "label": ""
+    },
+    {
+     "ref": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "plata"
+      ]
+     },
+     "label": ""
+    },
+    {
+     "ref": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "vito"
+      ]
+     },
+     "label": ""
+    }
+   ],
+   "handouts": [],
+   "notes": "",
+   "thumb": "modules/mr-reservoir-mice/assets/scenes/thumbs/cafeteria.webp",
+   "stage": {
+    "eye": 0.5,
+    "anchors": [
+     [
+      0.2,
+      0.9
+     ],
+     [
+      0.35,
+      0.92
+     ],
+     [
+      0.5,
+      0.93
+     ],
+     [
+      0.65,
+      0.92
+     ],
+     [
+      0.8,
+      0.9
+     ]
+    ]
+   }
+  },
+  {
+   "ref": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "apagon"
+    ]
+   },
+   "order": 10,
+   "name": "A oscuras",
+   "reading": {
+    "uuid": "JournalEntry.LCMke4W22UFrzMOx.JournalEntryPage.NJgDvW7dR2xXARAM"
+   },
+   "music": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "music-desague"
+    ]
+   },
+   "motifs": null,
+   "cues": [],
+   "ambient": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "ambient-zumbido"
+    ]
+   },
+   "figures": [],
+   "handouts": [],
+   "notes": "",
+   "thumb": "modules/mr-reservoir-mice/assets/scenes/thumbs/apagon.webp",
+   "stage": {
+    "eye": 0.5,
+    "anchors": [
+     [
+      0.2,
+      0.9
+     ],
+     [
+      0.35,
+      0.92
+     ],
+     [
+      0.5,
+      0.93
+     ],
+     [
+      0.65,
+      0.92
+     ],
+     [
+      0.8,
+      0.9
+     ]
+    ]
+   }
+  },
+  {
+   "ref": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "lancha"
+    ]
+   },
+   "order": 11,
+   "name": "Medianoche",
+   "reading": {
+    "uuid": "JournalEntry.LCMke4W22UFrzMOx.JournalEntryPage.JpK2OrbYvv9pjf9S"
+   },
+   "music": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "music-medianoche"
+    ]
+   },
+   "motifs": null,
+   "cues": [],
+   "ambient": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "ambient-muelle"
+    ]
+   },
+   "figures": [
+    {
+     "ref": {
+      "flag": [
+       "mr-reservoir-mice",
+       "slug",
+       "barquero"
+      ]
+     },
+     "label": ""
+    }
+   ],
+   "handouts": [],
+   "notes": "",
+   "thumb": "modules/mr-reservoir-mice/assets/scenes/thumbs/lancha.webp",
+   "stage": {
+    "eye": 0.5,
+    "anchors": [
+     [
+      0.2,
+      0.9
+     ],
+     [
+      0.35,
+      0.92
+     ],
+     [
+      0.5,
+      0.93
+     ],
+     [
+      0.65,
+      0.92
+     ],
+     [
+      0.8,
+      0.9
+     ]
+    ]
+   }
+  },
+  {
+   "ref": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "palacio"
+    ]
+   },
+   "order": 12,
+   "name": "Epílogo · La otra orilla",
+   "reading": {
+    "uuid": "JournalEntry.LCMke4W22UFrzMOx.JournalEntryPage.kAouvhrINwnMXU70"
+   },
+   "music": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "music-epilogo"
+    ]
+   },
+   "motifs": null,
+   "cues": [],
+   "ambient": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "ambient-muelle"
+    ]
+   },
+   "figures": [],
+   "handouts": [],
+   "notes": "",
+   "thumb": "modules/mr-reservoir-mice/assets/scenes/thumbs/palacio.webp",
+   "stage": {
+    "eye": 0.5,
+    "anchors": [
+     [
+      0.2,
+      0.9
+     ],
+     [
+      0.35,
+      0.92
+     ],
+     [
+      0.5,
+      0.93
+     ],
+     [
+      0.65,
+      0.92
+     ],
+     [
+      0.8,
+      0.9
+     ]
+    ]
+   }
+  },
+  {
+   "ref": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "amanecer"
+    ]
+   },
+   "order": 13,
+   "name": "Epílogo · En tierra",
+   "reading": {
+    "uuid": "JournalEntry.LCMke4W22UFrzMOx.JournalEntryPage.kAouvhrINwnMXU70"
+   },
+   "music": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "music-amanecer"
+    ]
+   },
+   "motifs": null,
+   "cues": [],
+   "ambient": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "ambient-muelle"
+    ]
+   },
+   "figures": [],
+   "handouts": [],
+   "notes": "",
+   "thumb": "modules/mr-reservoir-mice/assets/scenes/thumbs/amanecer.webp",
+   "stage": {
+    "eye": 0.5,
+    "anchors": [
+     [
+      0.2,
+      0.9
+     ],
+     [
+      0.35,
+      0.92
+     ],
+     [
+      0.5,
+      0.93
+     ],
+     [
+      0.65,
+      0.92
+     ],
+     [
+      0.8,
+      0.9
+     ]
+    ]
+   }
+  },
+  {
+   "ref": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "comisaria"
+    ]
+   },
+   "order": 14,
+   "name": "Postcréditos · Comisaría",
+   "reading": {
+    "uuid": "JournalEntry.LCMke4W22UFrzMOx.JournalEntryPage.kAouvhrINwnMXU70"
+   },
+   "music": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "music-amanecer"
+    ]
+   },
+   "motifs": null,
+   "cues": [],
+   "ambient": {
+    "flag": [
+     "mr-reservoir-mice",
+     "slug",
+     "ambient-muelle"
+    ]
+   },
+   "figures": [],
+   "handouts": [],
+   "notes": "",
+   "thumb": "modules/mr-reservoir-mice/assets/scenes/thumbs/comisaria.webp",
+   "stage": {
+    "eye": 0.5,
+    "anchors": [
+     [
+      0.2,
+      0.9
+     ],
+     [
+      0.35,
+      0.92
+     ],
+     [
+      0.5,
+      0.93
+     ],
+     [
+      0.65,
+      0.92
+     ],
+     [
+      0.8,
+      0.9
+     ]
+    ]
+   }
+  }
+ ]
+}

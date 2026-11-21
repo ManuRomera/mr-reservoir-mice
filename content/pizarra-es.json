@@ -1,0 +1,350 @@
+{
+ "format": "mr-pizarra-import",
+ "version": 1,
+ "mode": "board",
+ "title": "Reservoir Mice · Pizarra de sospechas",
+ "background": "corcho-claro",
+ "pinPreset": {
+  "pin": "auto",
+  "color": "",
+  "layout": "auto"
+ },
+ "layers": [
+  {
+   "ref": "banda",
+   "name": "La banda",
+   "revealed": true
+  },
+  {
+   "ref": "botin",
+   "name": "El botín",
+   "revealed": false
+  },
+  {
+   "ref": "maletero",
+   "name": "El maletero",
+   "revealed": false
+  },
+  {
+   "ref": "gris",
+   "name": "El Sr. Gris",
+   "revealed": false
+  },
+  {
+   "ref": "verdad",
+   "name": "La verdad",
+   "revealed": false
+  }
+ ],
+ "items": [
+  {
+   "ref": "negro",
+   "type": "entity",
+   "name": "Sr. Negro",
+   "kind": "Actor",
+   "frame": "polaroid",
+   "showToAll": true,
+   "layer": "banda",
+   "x": 420,
+   "y": 260,
+   "w": 220,
+   "rot": -4
+  },
+  {
+   "ref": "rojo",
+   "type": "entity",
+   "name": "Sr. Rojo",
+   "kind": "Actor",
+   "frame": "polaroid",
+   "showToAll": true,
+   "layer": "banda",
+   "x": 820,
+   "y": 260,
+   "w": 220,
+   "rot": 3
+  },
+  {
+   "ref": "verde",
+   "type": "entity",
+   "name": "Sr. Verde",
+   "kind": "Actor",
+   "frame": "polaroid",
+   "showToAll": true,
+   "layer": "banda",
+   "x": 1220,
+   "y": 260,
+   "w": 220,
+   "rot": -2
+  },
+  {
+   "ref": "purpura",
+   "type": "entity",
+   "name": "Sr. Púrpura",
+   "kind": "Actor",
+   "frame": "polaroid",
+   "showToAll": true,
+   "layer": "banda",
+   "x": 1620,
+   "y": 260,
+   "w": 220,
+   "rot": 4
+  },
+  {
+   "ref": "beige",
+   "type": "entity",
+   "name": "Sr. Beige",
+   "kind": "Actor",
+   "frame": "polaroid",
+   "showToAll": true,
+   "layer": "banda",
+   "x": 2020,
+   "y": 260,
+   "w": 220,
+   "rot": -3
+  },
+  {
+   "ref": "plata",
+   "type": "entity",
+   "name": "Sr. Plata",
+   "kind": "Actor",
+   "frame": "polaroid",
+   "showToAll": true,
+   "layer": "banda",
+   "x": 2420,
+   "y": 260,
+   "w": 220,
+   "rot": 2
+  },
+  {
+   "ref": "caso",
+   "type": "clipping",
+   "layer": "banda",
+   "title": "EL GOLPE DE LA JOYERÍA",
+   "text": "Cuatro cajas. Tres coches. Seis colores. La Guardia llegó demasiado pronto. ¿Quién avisó?",
+   "paper": "periodico-2",
+   "x": 1300,
+   "y": 760,
+   "w": 360,
+   "rot": -2
+  },
+  {
+   "ref": "sello-topo",
+   "type": "stamp",
+   "layer": "banda",
+   "kind": "marco-rect-rojo",
+   "text": "HAY UN TOPO",
+   "x": 1350,
+   "y": 1230,
+   "w": 230,
+   "rot": -6
+  },
+  {
+   "ref": "rastreador",
+   "type": "entity",
+   "name": "Microrrastreador",
+   "kind": "Item",
+   "frame": "diapositiva",
+   "layer": "botin",
+   "x": 300,
+   "y": 820,
+   "w": 210,
+   "rot": 3
+  },
+  {
+   "ref": "llamada",
+   "type": "note",
+   "layer": "banda",
+   "text": "Rojo oyó a Púrpura hablar con una chica sobre «sus planes».",
+   "color": "amarillo",
+   "x": 1620,
+   "y": 620,
+   "w": 190,
+   "rot": 4
+  },
+  {
+   "ref": "huida",
+   "type": "note",
+   "layer": "banda",
+   "text": "Beige huyó en un golpe anterior con Verde.",
+   "color": "rosa",
+   "x": 2050,
+   "y": 620,
+   "w": 190,
+   "rot": -3
+  },
+  {
+   "ref": "agente",
+   "type": "entity",
+   "name": "El agente del maletero",
+   "kind": "Actor",
+   "frame": "foto-instantanea-80",
+   "layer": "maletero",
+   "x": 2400,
+   "y": 900,
+   "w": 220,
+   "rot": -3
+  },
+  {
+   "ref": "cunado",
+   "type": "note",
+   "layer": "maletero",
+   "text": "Mira a Verde como si lo conociera.",
+   "color": "rosa",
+   "x": 2050,
+   "y": 1000,
+   "w": 190,
+   "rot": 2
+  },
+  {
+   "ref": "gris",
+   "type": "entity",
+   "name": "Sr. Gris",
+   "kind": "Actor",
+   "frame": "foto-sepia-esquinas",
+   "layer": "gris",
+   "x": 650,
+   "y": 1300,
+   "w": 220,
+   "rot": 2
+  },
+  {
+   "ref": "libreta",
+   "type": "clipping",
+   "layer": "gris",
+   "title": "Libreta del Sr. Gris",
+   "text": "18:40 Don Vito no sabe que estoy aquí. Uno de los seis colores trabaja para la Guardia. · 18:55 Golpes sordos en el maletero del Coche 1. Hay un guardia vivo ahí dentro.",
+   "paper": "libreta-rayas",
+   "x": 980,
+   "y": 1450,
+   "w": 320,
+   "rot": -3
+  },
+  {
+   "ref": "pintada",
+   "type": "clipping",
+   "layer": "gris",
+   "title": "EN EL ESPEJO",
+   "text": "UN POLI DUERME DENTRO DE CADA UNO DE NOSOTROS. DEBEMOS MATARLO.",
+   "paper": "papel-viejo-2",
+   "x": 1650,
+   "y": 1450,
+   "w": 320,
+   "rot": 3
+  },
+  {
+   "ref": "bridas",
+   "type": "note",
+   "layer": "verdad",
+   "text": "Bridas reglamentarias en el bolsillo de Plata.",
+   "color": "azul",
+   "x": 2700,
+   "y": 520,
+   "w": 190,
+   "rot": -4
+  },
+  {
+   "ref": "verdad",
+   "type": "stamp",
+   "layer": "verdad",
+   "kind": "marco-circular-rojo",
+   "text": "INFILTRADO",
+   "x": 2650,
+   "y": 300,
+   "w": 230,
+   "rot": 8
+  }
+ ],
+ "links": [
+  {
+   "from": "rojo",
+   "to": "llamada",
+   "color": "ambar",
+   "style": "punteado",
+   "label": "lo oyó"
+  },
+  {
+   "from": "llamada",
+   "to": "purpura",
+   "color": "ambar",
+   "style": "punteado",
+   "label": "¿cabo suelto?"
+  },
+  {
+   "from": "verde",
+   "to": "huida",
+   "color": "negro",
+   "style": "solido",
+   "label": "rencor"
+  },
+  {
+   "from": "huida",
+   "to": "beige",
+   "color": "ambar",
+   "style": "discontinuo",
+   "label": "¿cobarde?"
+  },
+  {
+   "from": "agente",
+   "to": "cunado",
+   "color": "violeta",
+   "style": "solido",
+   "label": ""
+  },
+  {
+   "from": "cunado",
+   "to": "verde",
+   "color": "violeta",
+   "style": "punteado",
+   "label": "¿familia?"
+  },
+  {
+   "from": "rastreador",
+   "to": "caso",
+   "color": "rojo",
+   "style": "solido",
+   "label": "la Guardia sabe dónde"
+  },
+  {
+   "from": "gris",
+   "to": "libreta",
+   "color": "rojo",
+   "style": "solido",
+   "label": "se la dio a alguien"
+  },
+  {
+   "from": "libreta",
+   "to": "sello-topo",
+   "color": "rojo",
+   "style": "solido",
+   "label": "uno de los seis"
+  },
+  {
+   "from": "pintada",
+   "to": "sello-topo",
+   "color": "rojo",
+   "style": "solido",
+   "label": ""
+  },
+  {
+   "from": "bridas",
+   "to": "plata",
+   "color": "rojo",
+   "style": "solido",
+   "label": "es él"
+  },
+  {
+   "from": "agente",
+   "to": "plata",
+   "color": "violeta",
+   "style": "solido",
+   "label": "compañeros"
+  },
+  {
+   "from": "verdad",
+   "to": "plata",
+   "color": "rojo",
+   "style": "solido",
+   "label": ""
+  }
+ ]
+}

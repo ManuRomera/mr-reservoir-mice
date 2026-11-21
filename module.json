@@ -1,0 +1,74 @@
+{
+  "id": "mr-reservoir-mice",
+  "title": "MR- Reservoir Mice",
+  "version": "1.0.0",
+  "description": "Un golpe ratonil que salió como el culo. Thriller criminal de una sesión para Mausritter: seis ratones trajeados, cuatro cajas de diamantes y un poli infiltrado. Aventura completa con dosieres secretos, relojes de la noche, salvación de nervios, duelo de miradas, arte propio de la serie, música e integración con MR- Dirección y MR- Pizarra.",
+  "authors": [
+    {
+      "name": "Manuel Romera Chinchilla",
+      "url": "https://github.com/ManuRomera"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13",
+    "maximum": "14"
+  },
+  "esmodules": [
+    "scripts/main.mjs"
+  ],
+  "styles": [
+    "styles/mr-reservoir.css"
+  ],
+  "languages": [
+    {
+      "lang": "es",
+      "name": "Español",
+      "path": "lang/es.json"
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "mausritter",
+        "type": "system",
+        "compatibility": {
+          "minimum": "0.6.1",
+          "verified": "0.6.1"
+        }
+      }
+    ],
+    "recommends": [
+      {
+        "id": "mr-direccion",
+        "type": "module",
+        "manifest": "https://github.com/ManuRomera/mr-direccion/releases/latest/download/module.json"
+      },
+      {
+        "id": "mr-pizarra",
+        "type": "module",
+        "manifest": "https://github.com/ManuRomera/mr-pizarra/releases/latest/download/module.json"
+      }
+    ]
+  },
+  "packs": [
+    {
+      "name": "aventura",
+      "label": "MR- Reservoir Mice",
+      "path": "packs/aventura",
+      "type": "Adventure",
+      "system": "mausritter",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "socket": true,
+  "url": "https://github.com/ManuRomera/mr-reservoir-mice",
+  "manifest": "https://github.com/ManuRomera/mr-reservoir-mice/releases/latest/download/module.json",
+  "download": "https://github.com/ManuRomera/mr-reservoir-mice/releases/download/v1.0.0/mr-reservoir-mice.zip",
+  "readme": "https://github.com/ManuRomera/mr-reservoir-mice#readme",
+  "bugs": "https://github.com/ManuRomera/mr-reservoir-mice/issues",
+  "license": "https://github.com/ManuRomera/mr-reservoir-mice/blob/main/LICENSE"
+}

@@ -1,0 +1,220 @@
+{
+ "MRRM": {
+  "SinGM": "No hay ningún DJ conectado: la acción tiene que hacerla el DJ.",
+  "FaltaCondicion": "Falta el objeto de condición «{slug}». Importa la aventura.",
+  "SinHueco": "{nombre} no tiene casillas libres para {cond}: tiene que soltar un objeto en el suelo.",
+  "SoloGM": "Solo el DJ puede hacer esto.",
+  "Cancelar": "Cancelar",
+  "Guardar": "Guardar",
+  "Cerrar": "Cerrar",
+  "Nervios": {
+   "SinActor": "Elige tu ratón (o selecciona su ficha en la escena).",
+   "Aguanta": "Aguanta el tipo. Las manos no tiemblan… todavía.",
+   "Paranoico": "Falla: queda Paranoico.",
+   "DedoFlojo": "Falla otra vez: ahora tiene el Dedo flojo.",
+   "Tope": "Falla, pero ya tenía el Dedo flojo: cualquier gesto brusco puede acabar en disparo.",
+   "Titulo": "Salvación de nervios",
+   "Contra": "contra VOL {vol}",
+   "Falla": "falla",
+   "Supera": "supera",
+   "Boton": "Nervios",
+   "Motivo": "Motivo",
+   "SinMotivo": "Sin motivo concreto",
+   "Lanzar": "Tirar por los marcados"
+  },
+  "Motivo": {
+   "libreta": "La libreta del Sr. Gris",
+   "rastreador": "El rastreador de la Caja 4",
+   "pintada": "La pintada",
+   "maletero": "El guardia del maletero",
+   "gris": "La desaparición del Sr. Gris",
+   "muerto": "Un compañero muerto",
+   "radio": "La radio de la Guardia"
+  },
+  "Flash1": {
+   "Pocos": "Marca al menos a dos ratones del Coche 2.",
+   "Umbral": "(cae con {n})",
+   "Cae": "¡alcanzado!",
+   "Titulo": "Flashback 1 · ¿Quién se llevó el tiro?",
+   "Orden": "Orden de los disparos",
+   "Resultado": "{nombre} se lleva el balazo: pierde {dano} PG y queda Herido (asiento trasero).",
+   "Lanzar": "Tirar la rueda del balazo"
+  },
+  "Reloj": {
+   "reloj": {
+    "Titulo": "La cuenta atrás",
+    "Corto": "Hora",
+    "GM0": "18:15. Llegan los coches. Reparte dosieres y lee la llegada.",
+    "GM1": "19:00. Flashback 1 y primeros auxilios al herido.",
+    "GM2": "20:00. El Sr. Gris llama aparte a un personaje y desaparece.",
+    "GM3": "21:00. Golpes en el maletero del Coche 1: el guardia.",
+    "GM4": "22:00. Flashback 2 (los tacos) y aparece la pintada.",
+    "GM5": "23:00. Entra el Limpiador (o se apaga la pila de 9 V).",
+    "GM6": "00:00. Atraca la lancha amarilla. Pide la contraseña.",
+    "Pub0": "Las 18:15. Faltan casi seis horas.",
+    "Pub1": "Las 19:00. La pila zumba. Nadie se sienta.",
+    "Pub2": "Las 20:00. Cuatro horas para medianoche.",
+    "Pub3": "Las 21:00. Tres horas. Alguien no deja de mirar la persiana.",
+    "Pub4": "Las 22:00. Dos horas. La niebla sube del agua.",
+    "Pub5": "Las 23:00. Una hora. Las manos ya no están quietas.",
+    "Pub6": "Medianoche. Doce campanadas al otro lado de la bahía."
+   },
+   "cerco": {
+    "Titulo": "El cerco",
+    "Corto": "Cerco",
+    "GM0": "Nadie ronda el muelle.",
+    "GM1": "Sirenas lejanas en la niebla, o arañazos junto al desagüe.",
+    "GM2": "El rastreador da un pico de señal, o la radio anuncia que han acordonado la zona.",
+    "GM3": "Una patrulla (o tres ratas atraídas por la sangre) rodea las puertas.",
+    "GM4": "Asalto total, justo cuando atraca la lancha.",
+    "Pub0": "Solo se oye el agua contra los pilotes.",
+    "Pub1": "Sirenas lejanas en la niebla.",
+    "Pub2": "Algo se mueve fuera, demasiado cerca.",
+    "Pub3": "Pasos y chillidos alrededor de la caja.",
+    "Pub4": "¡Están aquí!"
+   },
+   "paranoia": {
+    "Titulo": "La paranoia",
+    "Corto": "Paranoia",
+    "GM0": "Calma tensa.",
+    "GM1": "Tanteos: preguntas con segundas.",
+    "GM2": "Sospechas abiertas.",
+    "GM3": "Acusaciones a la cara.",
+    "GM4": "Hierros fuera. Si son antes de las 22:00, corta al Flashback 2.",
+    "Pub0": "Calma tensa.",
+    "Pub1": "Tanteos.",
+    "Pub2": "Sospechas abiertas.",
+    "Pub3": "Acusaciones.",
+    "Pub4": "Hierros fuera."
+   }
+  },
+  "Contrasena": {
+   "Titulo": "Contraseña del barquero",
+   "Ayuda": "La frase que dijo el segundo jugador en el Flashback 2. Saldrá a medianoche.",
+   "Vacia": "Todavía no hay contraseña: fíjala en el Flashback 2.",
+   "Barquero": "El barquero pide la contraseña",
+   "Fijar": "Apuntar",
+   "Decir": "Decirla a medianoche"
+  },
+  "Ayuda": {
+   "Pintada": "La pintada",
+   "Libreta": "La libreta del Sr. Gris",
+   "Mapa": "Plano del almacén",
+   "Imagen": "Ayuda de juego",
+   "EligeJugador": "Elige a qué jugador le da Gris la libreta.",
+   "ParaQuien": "Jugador elegido"
+  },
+  "Duelo": {
+   "Pocos": "Marca al menos a dos participantes.",
+   "SinDecidir": "sin decidir",
+   "Nadie": "No apunta a nadie",
+   "Titulo": "Duelo de miradas",
+   "Orden": "Se dispara de mayor a menor DES. Cada uno decide ahora si aprieta el gatillo.",
+   "Abierto": "Duelo abierto",
+   "Apuntar": "Elegir a quién apuntas",
+   "Hecho": "Ya has elegido",
+   "Revelar": "Revelar",
+   "Elige": "{nombre}: ¿a quién apuntas?",
+   "Secreto": "Nadie verá tu elección hasta que el DJ revele el duelo.",
+   "Cerrar": "Clic para cerrar.",
+   "HanElegido": "han elegido",
+   "Abrir": "Abrir el duelo"
+  },
+  "Hud": {
+   "Menos": "Retroceder",
+   "Mas": "Avanzar",
+   "Medianoche": "Hasta medianoche",
+   "Titulo": "Relojes de la noche"
+  },
+  "Panel": {
+   "Titulo": "Reservoir Mice · Panel del DJ",
+   "mesa": "La banda",
+   "noche": "La noche",
+   "escenas": "Escenas",
+   "reglas": "Reglas del golpe",
+   "ayudas": "Ayudas de juego",
+   "tablas": "Tablas",
+   "integ": "Integraciones",
+   "NadieAsignado": "— sin jugador —",
+   "MesaAyuda": "Elige quién lleva cada ratón: recibe la ficha, su dosier secreto se le abre en pantalla y nadie más puede leerlo.",
+   "Jugador": "Jugador de",
+   "MostrarDosier": "Abrir el dosier",
+   "SinAventura": "La aventura no está importada en este mundo.",
+   "Importar": "Importar la aventura",
+   "Reiniciar": "Reiniciar la noche",
+   "ReiniciarSeguro": "Los relojes vuelven a las 18:15, se borra la contraseña y se cierra cualquier duelo. Las fichas no cambian.",
+   "SinEscenas": "No hay escenas de la aventura en este mundo."
+  },
+  "Integ": {
+   "DireccionSi": "MR- Dirección activo: escenas, música, motivos, figuras e hitos de la aventura en su barra.",
+   "DireccionNo": "MR- Dirección no está activo (opcional): con él tienes barra de escenas con música, motivos y figuras.",
+   "PizarraSi": "MR- Pizarra activo: la pizarra de sospechas está lista para crearse.",
+   "PizarraNo": "MR- Pizarra no está activo (opcional): con él tienes una pizarra de sospechas por capas.",
+   "AbrirPizarra": "Pizarra de sospechas",
+   "NombrePizarra": "Reservoir Mice · Pizarra de sospechas",
+   "PizarraLista": "Pizarra preparada: revisa y pulsa «Importar»."
+  },
+  "Ajustes": {
+   "mostrarHud": {
+    "Name": "Mostrar los relojes de la noche",
+    "Hint": "Hora, cerco y paranoia en una esquina de la pantalla. Se arrastra con el botón derecho."
+   },
+   "efectosSonido": {
+    "Name": "Efectos de sonido",
+    "Hint": "Disparos, campanadas, sirenas y demás efectos de las reglas."
+   },
+   "volumenEfectos": {
+    "Name": "Volumen de los efectos",
+    "Hint": "Solo en este navegador."
+   },
+   "efectosVisuales": {
+    "Name": "Destellos en pantalla",
+    "Hint": "Un destello breve con los disparos, el duelo y las campanadas. Se desactiva solo si el sistema pide reducir el movimiento."
+   },
+   "textoGrande": {
+    "Name": "Texto grande",
+    "Hint": "Agranda el texto de los paneles, los relojes y el chat del módulo."
+   },
+   "altoContraste": {
+    "Name": "Alto contraste",
+    "Hint": "Colores más contrastados en los paneles y relojes del módulo."
+   },
+   "estiloToken": {
+    "Name": "Estilo de las fichas en escena",
+    "Hint": "Cuerpo entero sin fondo (recomendado) o el clásico retrato redondo.",
+    "Cuerpo": "Cuerpo entero",
+    "Redondo": "Retrato redondo"
+   },
+   "escalaVentanas": {
+    "Name": "Tamaño de las ventanas (%)",
+    "Hint": "0 = automático: cada ventana del módulo se encoge lo justo para caber entera en tu pantalla. Otro valor fija esa escala. Ajuste de este navegador."
+   },
+   "restablecer": {
+    "Name": "Restablecer posiciones",
+    "Label": "Restablecer",
+    "Hint": "Devuelve los relojes y el panel del DJ a su sitio y tamaño de origen.",
+    "Hecho": "Posiciones restablecidas."
+   }
+  },
+  "Importar": {
+   "SinPack": "No encuentro el compendio de la aventura.",
+   "Titulo": "Importar Reservoir Mice",
+   "Aviso": "Este mundo ya tiene contenido. Si importas la aventura se <b>sobrescribirán</b> los documentos de Reservoir Mice que hayas cambiado a mano.",
+   "Si": "Importar",
+   "Empieza": "Importando Reservoir Mice…",
+   "Hecho": "Aventura importada. Empieza por el diario «Reservoir Mice · Guía del DJ»."
+  },
+  "Barra": {
+   "Titulo": "Reservoir Mice",
+   "Panel": "Panel del DJ",
+   "Nervios": "Salvación de nervios",
+   "Hud": "Mostrar u ocultar los relojes",
+   "Pintada": "Mostrar la pintada",
+   "Pizarra": "Pizarra de sospechas"
+  },
+  "Casillas": {
+   "Aviso": "Regla del golpe: solo tienes seis casillas. Esa parte de la mochila no existe.",
+   "NoSeQuita": "«Sin sitio» es la regla del golpe: solo el DJ puede quitarlo."
+  }
+ }
+}

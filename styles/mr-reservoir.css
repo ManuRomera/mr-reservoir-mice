@@ -1,0 +1,173 @@
+/* MR- Reservoir Mice · cine negro ratonil: papel crema, amarillo Tarantino, sangre y tinta.
+   Regla de la casa: nunca se cambia la fuente de los iconos (<i class="fa-…">). */
+@font-face { font-family: "RM Anton"; src: url("../assets/fonts/Anton-Regular.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "RM Bebas"; src: url("../assets/fonts/BebasNeue-Regular.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "RM Maquina"; src: url("../assets/fonts/SpecialElite-Regular.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "RM Mano"; src: url("../assets/fonts/Caveat-Regular.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "RM Mano"; font-weight: 700; src: url("../assets/fonts/Caveat-Bold.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "RM Crimson"; src: url("../assets/fonts/CrimsonText-Regular.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "RM Crimson"; font-weight: 700; src: url("../assets/fonts/CrimsonText-Bold.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "RM Crimson"; font-style: italic; src: url("../assets/fonts/CrimsonText-Italic.ttf") format("truetype"); font-display: swap; }
+
+:root {
+  --rm-amarillo: #f2c21b; --rm-sangre: #8e2a1c; --rm-rojo: #b81d13; --rm-tinta: #161412; --rm-papel: #f1e8d2; --rm-papel2: #e4d7b8;
+  --rm-gris: #5f5a52; --rm-escala: 1;
+}
+body.mrrm-texto-grande { --rm-escala: 1.2; }
+body.mrrm-alto-contraste { --rm-papel: #fffdf6; --rm-papel2: #fff4cf; --rm-gris: #2b2925; --rm-amarillo: #ffd21a; }
+
+/* ---------------- Ventanas del módulo (kit mr-pantallas) ---------------- */
+.mr-reservoir-mice.application { max-width: calc((100vw - 8px) / var(--rm-esc-ventana, 1)); max-height: calc((100vh - 1.5 * var(--hotbar-height, 52px)) / var(--rm-esc-ventana, 1)); }
+.mr-reservoir-mice.application .window-content { overflow: auto; min-height: 0; background: var(--rm-papel); color: var(--rm-tinta); font-size: calc(14px * var(--rm-escala)); }
+.mr-reservoir-mice.application .window-content:has(> form.dialog-form) { overflow: hidden; }
+.mr-reservoir-mice.application form.dialog-form { display: flex; flex-direction: column; flex: 1 1 auto; min-height: 0; }
+.mr-reservoir-mice.application form.dialog-form > .dialog-content { flex: 1 1 auto; min-height: 0; overflow-y: auto; }
+.mr-reservoir-mice.application form.dialog-form > .form-footer { flex: none; }
+.mr-reservoir-mice.application .window-header { background: var(--rm-tinta); color: var(--rm-amarillo); border-bottom: 3px solid var(--rm-amarillo); }
+.mr-reservoir-mice.application .window-header .window-title { font-family: "RM Bebas", sans-serif; letter-spacing: .06em; font-size: 1.25em; }
+.mr-reservoir-mice.application input[type=text] { background: #fffaf0; color: var(--rm-tinta); }
+
+/* ---------------- Panel del DJ ---------------- */
+.mrrm-panel .mrrm-panel-cuerpo { display: flex; flex-direction: column; gap: .5rem; padding: .25rem; }
+.mrrm-panel details { border: 2px solid var(--rm-tinta); background: #fffaf0; box-shadow: 4px 4px 0 var(--rm-amarillo); }
+.mrrm-panel summary { cursor: pointer; padding: .35rem .6rem; background: var(--rm-tinta); color: var(--rm-papel); font-family: "RM Bebas", sans-serif; font-size: 1.35em; letter-spacing: .05em; list-style: none; }
+.mrrm-panel summary::-webkit-details-marker { display: none; }
+.mrrm-panel summary:focus-visible { outline: 3px solid var(--rm-amarillo); outline-offset: -3px; }
+.mrrm-panel details[open] summary { background: var(--rm-sangre); }
+.mrrm-panel .mrrm-sec { padding: .5rem .6rem .7rem; display: flex; flex-direction: column; gap: .45rem; }
+.mrrm-panel h4 { margin: .4rem 0 0; font-family: "RM Bebas", sans-serif; font-size: 1.2em; letter-spacing: .04em; border-bottom: 2px solid var(--rm-amarillo); color: var(--rm-tinta); }
+.mrrm-panel button { font-family: "RM Bebas", sans-serif; letter-spacing: .04em; font-size: 1.05em; background: var(--rm-amarillo); color: var(--rm-tinta); border: 2px solid var(--rm-tinta); border-radius: 0; box-shadow: 2px 2px 0 var(--rm-tinta); padding: .1rem .55rem; flex: 0 0 auto; width: auto; line-height: 1.6; }
+.mrrm-panel button:hover { background: var(--rm-tinta); color: var(--rm-amarillo); }
+.mrrm-panel button:focus-visible { outline: 3px solid var(--rm-sangre); outline-offset: 1px; }
+.mrrm-panel button.mrrm-discreto { background: transparent; box-shadow: none; align-self: flex-start; }
+.mrrm-panel .mrrm-ayuda { font-style: italic; color: var(--rm-gris); margin: 0; }
+.mrrm-panel .mrrm-fila { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; }
+.mrrm-panel .mrrm-fila > span { flex: 1 1 12rem; }
+.mrrm-panel select { flex: 1 1 8rem; min-width: 0; background: #fffaf0; color: var(--rm-tinta); }
+.mrrm-reparto { list-style: none; margin: 0; padding: 0; display: grid; gap: .3rem; }
+.mrrm-reparto li { display: grid; grid-template-columns: 44px 1fr minmax(8rem, 12rem) auto; gap: .45rem; align-items: center; }
+.mrrm-reparto img, .mrrm-chip img { width: 44px; height: 44px; object-fit: cover; object-position: top; border: 2px solid var(--rm-tinta); background: var(--rm-papel2); }
+.mrrm-reparto span { font-family: "RM Bebas", sans-serif; font-size: 1.3em; }
+.mrrm-reloj { display: grid; grid-template-columns: 1fr auto auto auto; grid-template-rows: auto auto; gap: .1rem .4rem; align-items: center; padding-bottom: .35rem; border-bottom: 1px dashed var(--rm-gris); }
+.mrrm-reloj > span { font-family: "RM Bebas", sans-serif; font-size: 1.15em; }
+.mrrm-reloj strong { font-family: "RM Anton", sans-serif; font-size: 1.4em; min-width: 3.5em; text-align: center; color: var(--rm-sangre); }
+.mrrm-reloj small { grid-column: 1 / -1; color: var(--rm-gris); font-size: .9em; }
+.mrrm-escenas { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr)); gap: .4rem; }
+.mrrm-escenas button { width: 100%; padding: 0; display: flex; flex-direction: column; background: var(--rm-tinta); color: var(--rm-papel); box-shadow: none; }
+.mrrm-escenas img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border: 0; display: block; }
+.mrrm-escenas span { padding: .1rem .3rem; font-size: .95em; text-align: left; }
+.mrrm-escenas li.activa button { outline: 3px solid var(--rm-amarillo); }
+.mrrm-chips { display: flex; flex-wrap: wrap; gap: .3rem; }
+.mrrm-chip { display: inline-flex; align-items: center; gap: .3rem; padding: .1rem .4rem .1rem .1rem; border: 1px solid var(--rm-gris); background: var(--rm-papel); cursor: pointer; }
+.mrrm-chip img { width: 28px; height: 28px; }
+.mrrm-chip:has(input:checked) { background: var(--rm-amarillo); border-color: var(--rm-tinta); }
+
+/* ---------------- HUD de la noche ---------------- */
+.mrrm-hud { position: fixed; bottom: calc(var(--hotbar-height, 52px) + 96px); left: 50%; transform: translateX(-50%); z-index: 70; display: flex; align-items: stretch; gap: 0; background: var(--rm-papel); color: var(--rm-tinta);
+  border: 3px solid var(--rm-tinta); box-shadow: 5px 5px 0 var(--rm-amarillo), 0 6px 18px rgba(0, 0, 0, .45); font-size: calc(13px * var(--rm-escala)); user-select: none; max-width: calc(100vw - 24px); }
+.mrrm-hud-hora { background: var(--rm-tinta); color: var(--rm-amarillo); padding: .25rem .6rem .35rem; display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 6.5em; position: relative; }
+.mrrm-hud-kicker { font-family: "RM Bebas", sans-serif; letter-spacing: .12em; font-size: .85em; color: var(--rm-papel); }
+.mrrm-hud-hora strong { font-family: "RM Anton", sans-serif; font-size: 2.2em; line-height: 1.05; letter-spacing: .02em; }
+.mrrm-hud-cuerpo { display: flex; flex-direction: column; justify-content: center; gap: .2rem; padding: .3rem .55rem; }
+.mrrm-hud-fila { display: flex; align-items: center; gap: .35rem; }
+.mrrm-hud-lbl { font-family: "RM Bebas", sans-serif; font-size: 1.1em; letter-spacing: .05em; min-width: 4.6em; }
+.mrrm-pips { display: inline-flex; gap: 3px; }
+.mrrm-pip { width: .9em; height: .9em; border: 2px solid currentColor; transform: skewX(-12deg); background: transparent; }
+.mrrm-hud-hora .mrrm-pip { width: .7em; height: .45em; border-width: 1px; }
+.mrrm-pip.on { background: var(--rm-amarillo); }
+.mrrm-pip.cerco.on { background: #2c5e8f; }
+.mrrm-pip.paranoia.on { background: var(--rm-rojo); }
+.mrrm-mm { display: none; gap: 2px; }
+.mrrm-hud.es-gm .mrrm-mm { display: inline-flex; }
+.mrrm-hud-hora .mrrm-mm { margin: 1px 0 2px; }
+.mrrm-hud button { font-family: "RM Bebas", sans-serif; letter-spacing: .04em; font-size: 1em; line-height: 1.3; padding: 0 .4rem; border-radius: 0; border: 2px solid var(--rm-tinta);
+  background: var(--rm-amarillo); color: var(--rm-tinta); width: auto; flex: none; cursor: pointer; }
+.mrrm-mm button { width: 1.5em; height: 1.5em; padding: 0; line-height: 1; border-width: 1px; }
+.mrrm-hud button:focus-visible { outline: 3px solid var(--rm-sangre); }
+.mrrm-hud-duelo { display: flex; align-items: center; gap: .3rem; color: var(--rm-sangre); font-family: "RM Bebas", sans-serif; font-size: 1.1em; }
+.mrrm-hud-nervios { align-self: flex-start; }
+
+/* Rótulo grande al avanzar un reloj */
+.mrrm-rotulo { position: fixed; left: 50%; top: 18%; transform: translateX(-50%) rotate(-2deg); z-index: 9000; pointer-events: none; text-align: center;
+  background: var(--rm-amarillo); color: var(--rm-tinta); border: 5px solid var(--rm-tinta); box-shadow: 10px 10px 0 var(--rm-tinta); padding: .6rem 2rem 1rem;
+  animation: mrrm-entra .35s cubic-bezier(.2, 1.4, .4, 1); transition: opacity .9s, transform .9s; max-width: 80vw; }
+.mrrm-rotulo strong { display: block; font-family: "RM Anton", sans-serif; font-size: clamp(48px, 9vw, 120px); line-height: 1; }
+.mrrm-rotulo span { display: block; font-family: "RM Maquina", monospace; font-size: clamp(16px, 1.8vw, 24px); }
+.mrrm-rotulo-cerco { background: #2c5e8f; color: var(--rm-papel); }
+.mrrm-rotulo-paranoia { background: var(--rm-rojo); color: var(--rm-papel); }
+.mrrm-rotulo.fuera { opacity: 0; transform: translateX(-50%) rotate(-2deg) translateY(-30px); }
+@keyframes mrrm-entra { from { transform: translateX(-50%) rotate(-2deg) scale(.4); opacity: 0; } }
+
+/* Destellos */
+.mrrm-destello { position: fixed; inset: 0; z-index: 8999; pointer-events: none; animation: mrrm-flash 1.1s ease-out forwards; }
+.mrrm-destello-rojo { background: radial-gradient(circle, rgba(184, 29, 19, .55), rgba(0, 0, 0, .0) 70%); }
+.mrrm-destello-amarillo { background: radial-gradient(circle, rgba(242, 194, 27, .45), rgba(0, 0, 0, 0) 70%); }
+.mrrm-destello-negro { background: rgba(0, 0, 0, .55); }
+.mrrm-destello-azul { background: linear-gradient(90deg, rgba(44, 94, 143, .35), rgba(184, 29, 19, .35)); }
+@keyframes mrrm-flash { 0% { opacity: 0; } 12% { opacity: 1; } 100% { opacity: 0; } }
+
+/* Duelo: elección y revelación */
+.mrrm-duelo-caras { display: flex; flex-wrap: wrap; gap: .5rem; justify-content: center; }
+.mrrm-duelo-caras figure { margin: 0; width: 86px; text-align: center; font-family: "RM Bebas", sans-serif; color: var(--rm-tinta); font-size: 1.15em; }
+.mrrm-duelo-caras img { width: 86px; height: 86px; object-fit: cover; object-position: top; border: 2px solid var(--rm-tinta); }
+.mrrm-standoff { position: fixed; inset: 0; z-index: 9001; background: rgba(15, 12, 10, .88); color: var(--rm-papel); display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer; padding: 2rem; }
+.mrrm-standoff h2 { font-family: "RM Anton", sans-serif; font-size: clamp(36px, 6vw, 84px); color: var(--rm-amarillo); border: none; margin: 0 0 1rem; letter-spacing: .03em; }
+.mrrm-standoff ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem 2rem; width: min(1200px, 100%); }
+.mrrm-standoff li { display: flex; align-items: center; gap: .8rem; justify-content: center; animation: mrrm-entra-li .4s both; }
+.mrrm-standoff li:nth-child(2) { animation-delay: .15s; } .mrrm-standoff li:nth-child(3) { animation-delay: .3s; } .mrrm-standoff li:nth-child(4) { animation-delay: .45s; }
+.mrrm-standoff li:nth-child(5) { animation-delay: .6s; } .mrrm-standoff li:nth-child(6) { animation-delay: .75s; } .mrrm-standoff li:nth-child(7) { animation-delay: .9s; }
+@keyframes mrrm-entra-li { from { transform: scale(.5); opacity: 0; } }
+.mrrm-standoff figure { margin: 0; text-align: center; font-family: "RM Bebas", sans-serif; font-size: 1.3em; }
+.mrrm-standoff img { width: clamp(72px, 9vw, 120px); aspect-ratio: 1; object-fit: cover; object-position: top; border: 3px solid var(--rm-amarillo); background: var(--rm-papel); }
+.mrrm-standoff figure.nadie { width: clamp(72px, 9vw, 120px); color: #bbb; font-style: italic; }
+.mrrm-standoff .fa-arrow-right-long { color: var(--rm-rojo); font-size: 2.4em; }
+.mrrm-standoff p { margin-top: 1.5rem; color: #ccc; }
+@media (prefers-reduced-motion: reduce) { .mrrm-rotulo, .mrrm-standoff li { animation: none; } .mrrm-destello { display: none; } }
+
+/* ---------------- Chat ---------------- */
+.mrrm-chat { background: var(--rm-papel); color: var(--rm-tinta); border: 2px solid var(--rm-tinta); box-shadow: 3px 3px 0 var(--rm-amarillo); padding: .4rem .55rem; font-size: calc(1em * var(--rm-escala)); }
+.mrrm-chat header { display: flex; align-items: center; gap: .5rem; margin-bottom: .3rem; }
+.mrrm-chat header img { width: 64px; height: 64px; object-fit: contain; border: 0; background: var(--rm-papel2); flex: none; }
+.mrrm-chat h3 { font-family: "RM Bebas", sans-serif; font-size: 1.45em; letter-spacing: .04em; margin: 0; border: 0; color: var(--rm-tinta); }
+.mrrm-chat.mrrm-alerta { box-shadow: 3px 3px 0 var(--rm-rojo); }
+.mrrm-chat.mrrm-alerta h3 { color: var(--rm-sangre); }
+.mrrm-chat .mrrm-tirada strong { font-family: "RM Anton", sans-serif; font-size: 1.7em; color: var(--rm-sangre); }
+.mrrm-chat .mrrm-motivo { font-family: "RM Maquina", monospace; margin: 0; }
+.mrrm-chat .mrrm-cita { font-family: "RM Maquina", monospace; font-size: 1.3em; text-align: center; }
+.mrrm-chat ol, .mrrm-chat ul { margin: .2rem 0; padding-left: 1.2rem; }
+.mrrm-chat.mrrm-duelo ul { list-style: none; padding: 0; }
+.mrrm-chat.mrrm-duelo li { display: flex; align-items: center; gap: .3rem; margin: .2rem 0; flex-wrap: wrap; }
+.mrrm-chat.mrrm-duelo img { width: 28px; height: 28px; object-fit: cover; object-position: top; border: 1px solid var(--rm-tinta); }
+.mrrm-chat .mrrm-dex { font-size: .8em; color: var(--rm-gris); }
+
+/* ---------------- Diarios de la aventura ---------------- */
+.mrrm-diario { font-family: "RM Crimson", serif; font-size: calc(17px * var(--rm-escala)); line-height: 1.45; color: var(--rm-tinta); }
+.mrrm-diario p { text-align: justify; hyphens: auto; }
+.mrrm-diario .mrrm-kicker { font-family: "RM Bebas", sans-serif; letter-spacing: .14em; color: var(--rm-sangre); font-size: 1.05em; margin: 0; }
+.mrrm-diario h1, .mrrm-diario h2 { font-family: "RM Anton", sans-serif; font-weight: normal; letter-spacing: .01em; border-bottom: 4px solid var(--rm-amarillo); color: var(--rm-tinta); }
+.mrrm-diario h3 { font-family: "RM Bebas", sans-serif; font-size: 1.5em; letter-spacing: .04em; color: var(--rm-sangre); border: 0; margin-top: 1.1em; }
+.mrrm-diario blockquote.mrrm-lectura { background: #fff6d6; border: 0; border-left: 6px solid var(--rm-amarillo); padding: .6rem .9rem; font-style: italic; margin: .8rem 0; }
+.mrrm-diario .mrrm-regla, .mrrm-diario .mrrm-caja { border: 2px solid var(--rm-tinta); background: #fffaf0; padding: .5rem .8rem; box-shadow: 4px 4px 0 var(--rm-amarillo); margin: .8rem 0; }
+.mrrm-diario .mrrm-regla { box-shadow: 4px 4px 0 var(--rm-sangre); }
+.mrrm-diario .mrrm-regla h4, .mrrm-diario .mrrm-caja h4 { font-family: "RM Bebas", sans-serif; font-size: 1.35em; letter-spacing: .04em; margin: 0 0 .2rem; color: var(--rm-sangre); }
+.mrrm-diario .mrrm-rejilla { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: .6rem; }
+.mrrm-diario .mrrm-rejilla p { margin: 0; padding: .5rem .7rem; background: var(--rm-tinta); color: var(--rm-papel); text-align: left; }
+.mrrm-diario .mrrm-rejilla p strong { color: var(--rm-amarillo); font-family: "RM Bebas", sans-serif; font-size: 1.2em; letter-spacing: .05em; display: block; }
+.mrrm-diario table { border-collapse: collapse; width: 100%; font-size: .92em; background: #fffaf0; }
+.mrrm-diario th { background: var(--rm-tinta); color: var(--rm-amarillo); font-family: "RM Bebas", sans-serif; font-size: 1.1em; letter-spacing: .04em; text-align: left; padding: .25rem .4rem; }
+.mrrm-diario td { border-bottom: 1px solid var(--rm-papel2); padding: .3rem .4rem; vertical-align: top; }
+.mrrm-diario figure { margin: .8rem 0; }
+.mrrm-diario figure img { width: 100%; border: 3px solid var(--rm-tinta); }
+.mrrm-diario figure.derecha { float: right; width: 42%; margin: 0 0 .6rem 1rem; }
+.mrrm-diario figcaption { font-family: "RM Maquina", monospace; font-size: .8em; color: var(--rm-gris); }
+/* Dosier secreto */
+.mrrm-dosier { font-family: "RM Maquina", monospace; font-size: calc(15px * var(--rm-escala)); line-height: 1.5; background: #efe3c2; padding: 1rem 1.2rem; border: 1px solid #b9a77c; }
+.mrrm-dosier h1 { font-family: "RM Anton", sans-serif; font-weight: normal; border: 0; margin: 0; }
+.mrrm-dosier .mrrm-sello { display: inline-block; color: var(--rm-rojo); border: 3px solid var(--rm-rojo); padding: 0 .5rem; transform: rotate(-4deg); font-family: "RM Bebas", sans-serif; font-size: 1.4em; letter-spacing: .1em; }
+.mrrm-dosier img.mrrm-foto { float: right; width: 34%; margin: 0 0 .5rem 1rem; border: 6px solid #fff; box-shadow: 2px 3px 6px rgba(0, 0, 0, .35); transform: rotate(2deg); }
+.mrrm-dosier h3 { font-family: "RM Bebas", sans-serif; font-size: 1.35em; letter-spacing: .05em; border-bottom: 2px solid var(--rm-tinta); color: var(--rm-sangre); }
+.mrrm-dosier .mrrm-stats { display: flex; flex-wrap: wrap; gap: .4rem; margin: .5rem 0; }
+.mrrm-dosier .mrrm-stats span { background: var(--rm-tinta); color: var(--rm-amarillo); padding: .1rem .5rem; font-family: "RM Bebas", sans-serif; font-size: 1.2em; }
+.mrrm-dosier dl { display: grid; grid-template-columns: max-content 1fr; gap: .15rem .6rem; }
+.mrrm-dosier dt { font-weight: bold; }
+.mrrm-dosier dd { margin: 0; }
