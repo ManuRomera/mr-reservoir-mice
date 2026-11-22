@@ -6,6 +6,7 @@ import { pintarHud } from "./hud.mjs";
 import { PanelDJ } from "./panel.mjs";
 import { registrarDireccion, abrirPizarra } from "./integraciones.mjs";
 import { registrarVentanas } from "./ventanas.mjs";
+import { registrarPiel, ponerPortada } from "./piel.mjs";
 
 const PACK = `${ID}.aventura`;
 
@@ -28,6 +29,7 @@ Hooks.once("init", () => {
       async render() { await game.settings.set(ID, "posHud", {}); await game.settings.set(ID, "ventanas", {}); pintarHud(); ui.notifications.info(t("Ajustes.restablecer.Hecho")); return this; }
     } });
   registrarVentanas();
+  registrarPiel();
 });
 
 /* ---------------- Importación de la aventura ---------------- */
@@ -72,6 +74,7 @@ Hooks.once("ready", async () => {
     // las macros del compendio llevan un autor ficticio: pasan al GM que las importa
     for (const m of game.macros.filter((m) => m.getFlag(ID, "macro") && !game.users.has(m.author?.id))) await m.update({ author: game.user.id });
     if (game.user === game.users.activeGM && !game.settings.get(ID, "importada") && mundoVacio()) await importarAventura({ confirmar: false });
+    if (game.user === game.users.activeGM && game.settings.get(ID, "importada")) ponerPortada();
   }
 });
 

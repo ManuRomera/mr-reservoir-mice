@@ -1,5 +1,13 @@
 # Cambios
 
+## 1.1.0
+
+- **Banda sonora real: la radio de los setenta.** La música sintetizada se sustituye por 18 piezas de Kevin MacLeod (CC BY 4.0) elegidas escena a escena: soul, funk y jazz de época. Las del almacén suenan por un transistor, como la radio de la película; la huida, el botín y el clímax, limpias. Los 16 efectos y los 2 ambientes son grabaciones reales de Freesound (CC0). Todo pasa por un master común, con bucles a compás sin corte (`tools/banda.py`). Los créditos están en NOTICE, en cada sonido de las listas y en la guía.
+- **Piel Reservoir Mice** en las fichas de Mausritter, sus diálogos de tirada y las tarjetas del chat. El marco del retrato es del color de cada ratón y el daño se estampa como un sello. Sigue el modo oscuro de MR- Mausritter en español y se puede apagar en los ajustes.
+- **Cuadro de la ficha esencial:** edad, papel, lema y las tres reglas que hay que tener a mano. El retrato completo está en Notas.
+- **Los PNJ enseñan su texto:** la hoja de criatura de Mausritter solo muestra Notas, y ahí está ahora su descripción, su voz y su frase.
+- **Portada del mundo:** en un mundo nuevo, la ilustración del almacén y la sinopsis aparecen en la pantalla de entrada. Nunca pisa lo que ya haya.
+
 ## 1.0.2
 
 - **Barra de MR- Dirección ordenada por escena.** Solo «Disparo» y «Amartillar» están siempre a mano; cada escena muestra únicamente sus propios efectos (la lancha y las campanadas en Medianoche, los golpes del maletero en la nave y el maletero, el chispazo en la cocina y el apagón…). El plano del almacén usa los de la nave.

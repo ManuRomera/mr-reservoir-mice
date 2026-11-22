@@ -5,6 +5,45 @@
 - El tono homenajea el cine de atracos de los noventa. Ningún nombre, diálogo ni imagen procede de esas películas.
 - **Historia y diseño:** Manuel Romera Chinchilla. La revisión del texto y de las reglas, el módulo de Foundry, el libro en PDF y las herramientas se hicieron con Claude bajo la dirección del autor y con su revisión.
 - **Imágenes:** generadas con IA (Codex, con la generación de imágenes de ChatGPT) a partir de cuatro imágenes modelo del autor, y firmadas con la marca MR.
-- **Música y efectos:** síntesis original con `tools/audio.py` de este repositorio.
+- **Música:** Kevin MacLeod ([incompetech.com](https://incompetech.com)). Licencia Creative Commons Attribution 4.0 ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)). Las pistas están recortadas en bucle, ecualizadas y normalizadas con `tools/banda.py`; las marcadas «radio» pasan además por un filtro de transistor.
+  - Tema (créditos): «Style Funk»
+  - La espera (radio del almacén): «Late Night Radio»
+  - La huida: «Mistake the Getaway»
+  - El botín: «Covert Affair»
+  - El desagüe (radio): «Fork and Spoon»
+  - La Lata de Sardinas (máquina de discos): «Whiskey on the Mississippi»
+  - Medianoche: «Spy Groove»
+  - Otra vida: «Night on the Docks - Sax»
+  - Amanecer en tierra: «DD Groove»
+  - Tensión: «On the Ground»
+  - Paranoia: «Dances and Dames»
+  - Persecución: «Pulse»
+  - Duelo: «Western Streets»
+  - Calma tensa (radio): «Clean Soul»
+  - Misterio: «Bass Walker»
+  - A oscuras: «Long Note Two»
+  - Triunfo: «Got Funk»
+  - Derrota: «Night on the Docks - Trumpet»
+- **Efectos y ambientes:** grabaciones de [Freesound](https://freesound.org) con licencia [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) (dominio público). Mezcladas, recortadas y pasadas por el mismo master con `tools/banda.py`. Se citan por cortesía:
+  - cocking a revolver, de acidsnowflake (freesound.org/s/402790)
+  - gun cock near, de _stubb (freesound.org/s/406227)
+  - short circuit, de Qvantor (freesound.org/s/881277)
+  - bell tower midnight, de blaukreuz (freesound.org/s/240586)
+  - speed boat outboard motors low gear, de kyles (freesound.org/s/454201)
+  - cat growl into hiss, de Wrenasmir (freesound.org/s/455495)
+  - police radio chatter, de Iam_calderon (freesound.org/s/435383)
+  - ratty squeaks, de Reitanna (freesound.org/s/217767)
+  - heartbeat 80bpm, de loudernoises (freesound.org/s/332819)
+  - old scots clock ticking, de fauxpress (freesound.org/s/42139)
+  - spray paint, de wolfdoctor (freesound.org/s/555112)
+  - spray paint shake, de cbakos (freesound.org/s/200377)
+  - rolling shutters down, de Areti18 (freesound.org/s/394951)
+  - water lapping gurgling under dock, de TRP (freesound.org/s/574869)
+  - dock wood creak water lapping, de Filipe Chagas (freesound.org/s/91912)
+  - fluorescent light hum, de deleted_user_7146007 (freesound.org/s/383657)
+  - single pistol gunshot 2, de morganpurkis (freesound.org/s/371440)
+  - police siren, de TitanKaempfer (freesound.org/s/746302)
+  - bass thumps through wall, de CHallSmith (freesound.org/s/870504)
+  - low gong hit, de Qvantor (freesound.org/s/879271)
 - **Tipografías:** Anton, Bebas Neue, Special Elite, Caveat y Crimson Text, todas con licencia SIL Open Font License.
-- **Licencia:** CC BY-NC-SA 4.0 para el texto, las imágenes, el audio y el código de este módulo.
+- **Licencia:** CC BY-NC-SA 4.0 para el texto, las imágenes y el código de este módulo. La música y los efectos conservan su propia licencia (arriba).

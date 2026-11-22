@@ -35,5 +35,5 @@ Revisión de la edición HTML de dirección (y del borrador de módulo que la ac
 - El borrador pedía cargar a mano un JSON y creaba diarios sueltos. Ahora es un compendio de aventura que **se importa solo** en un mundo vacío.
 - Fichas completas de Mausritter con el inventario colocado y la **regla de las seis casillas** impuesta en la hoja.
 - Reparto de personajes con **dosier secreto** por jugador, relojes de la noche a la vista de todos, salvación de nervios automática, rueda del Flashback 1, contraseña del barquero y duelo de miradas secreto.
-- Banda sonora y efectos propios; integración con **MR- Dirección** y **MR- Pizarra**.
+- Banda sonora de Kevin MacLeod y efectos de Freesound (la radio de los setenta); integración con **MR- Dirección** y **MR- Pizarra**.
 - Ventanas que caben en cualquier pantalla y accesibilidad (texto grande, alto contraste, sin destellos con movimiento reducido).

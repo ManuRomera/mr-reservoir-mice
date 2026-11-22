@@ -194,6 +194,10 @@
     "Label": "Restablecer",
     "Hint": "Devuelve los relojes y el panel del DJ a su sitio y tamaño de origen.",
     "Hecho": "Posiciones restablecidas."
+   },
+   "pielTiradas": {
+    "Name": "Piel Reservoir Mice en fichas y tiradas",
+    "Hint": "Viste las fichas de Mausritter, sus diálogos de tirada y las tarjetas del chat con el estilo de la aventura (papel, tinta y el amarillo de la banda). Sigue el modo oscuro de MR- Mausritter en español. Desactívalo para ver el aspecto original del sistema."
    }
   },
   "Importar": {
@@ -215,6 +219,7 @@
   "Casillas": {
    "Aviso": "Regla del golpe: solo tienes seis casillas. Esa parte de la mochila no existe.",
    "NoSeQuita": "«Sin sitio» es la regla del golpe: solo el DJ puede quitarlo."
-  }
+  },
+  "DescripcionMundo": "<p><strong>Seis ratones trajeados, cuatro cajas de diamantes y un almacén bajo el embarcadero.</strong></p><p>Hasta medianoche no llega la lancha. Y uno de ellos lleva placa.</p><p><em>Thriller criminal para una sesión de Mausritter.</em></p>"
  }
 }

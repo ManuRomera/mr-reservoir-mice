@@ -22,8 +22,8 @@
       "max": 2
      },
      "armor": 0,
-     "biography": "<p><em>23 años · Amigo del hijo del Jefe · El más duro · El más corto de luces</em></p><p>Ratón joven y corpulento, pelaje negro y rizado. En vez de traje lleva un chándal hortera de tela de paraguas.</p><p>Lo que esconde está en su dosier secreto.</p>",
-     "notes": "",
+     "biography": "<p class=\"mrrm-lema\"><em>23 años · Amigo del hijo del Jefe</em><br>«El más duro · El más corto de luces»</p><ul class=\"mrrm-esencial\"><li><strong>Seis casillas.</strong> Lo que no cabe se queda en el coche.</li><li><strong>Nervios.</strong> Botón de la barra Reservoir Mice: si fallas, Paranoico o Dedo flojo entra en una casilla libre.</li><li><strong>Tu secreto</strong> está en tu dosier (Diarios › Dosieres secretos). Solo tú lo ves.</li></ul>",
+     "notes": "<p><em>23 años · Amigo del hijo del Jefe · El más duro · El más corto de luces</em></p><p>Ratón joven y corpulento, pelaje negro y rizado. En vez de traje lleva un chándal hortera de tela de paraguas.</p>",
      "description": {
       "background": "Amigo del hijo del Jefe",
       "birthsign": "",
@@ -414,8 +414,8 @@
       "max": 2
      },
      "armor": 0,
-     "biography": "<p><em>23 años · Nuevo en la banda · El más rápido · El más endeble</em></p><p>Ratón joven y fibroso, traje barato de confección, corbata roja estrecha y tupé engominado.</p><p>Tu rifle de aguja (d10, dos casillas) sigue en el maletero del Coche 2. Si lo sacas, ocupa tus dos casillas de mochila.</p><p>Lo que esconde está en su dosier secreto.</p>",
-     "notes": "",
+     "biography": "<p class=\"mrrm-lema\"><em>23 años · Nuevo en la banda</em><br>«El más rápido · El más endeble»</p><ul class=\"mrrm-esencial\"><li><strong>Seis casillas.</strong> Lo que no cabe se queda en el coche.</li><li><strong>Nervios.</strong> Botón de la barra Reservoir Mice: si fallas, Paranoico o Dedo flojo entra en una casilla libre.</li><li><strong>Tu secreto</strong> está en tu dosier (Diarios › Dosieres secretos). Solo tú lo ves.</li></ul>",
+     "notes": "<p><em>23 años · Nuevo en la banda · El más rápido · El más endeble</em></p><p>Ratón joven y fibroso, traje barato de confección, corbata roja estrecha y tupé engominado.</p><p>Tu rifle de aguja (d10, dos casillas) sigue en el maletero del Coche 2. Si lo sacas, ocupa tus dos casillas de mochila.</p>",
      "description": {
       "background": "Nuevo en la banda",
       "birthsign": "",
@@ -710,8 +710,8 @@
       "max": 2
      },
      "armor": 0,
-     "biography": "<p><em>47 años · Gángster veterano · El más guapo · El más bajito</em></p><p>Ratón maduro de porte impecable, pelaje entrecano, tatuajes borrosos en los nudillos y corbata verde oscuro.</p><p>Lo que esconde está en su dosier secreto.</p>",
-     "notes": "",
+     "biography": "<p class=\"mrrm-lema\"><em>47 años · Gángster veterano</em><br>«El más guapo · El más bajito»</p><ul class=\"mrrm-esencial\"><li><strong>Seis casillas.</strong> Lo que no cabe se queda en el coche.</li><li><strong>Nervios.</strong> Botón de la barra Reservoir Mice: si fallas, Paranoico o Dedo flojo entra en una casilla libre.</li><li><strong>Tu secreto</strong> está en tu dosier (Diarios › Dosieres secretos). Solo tú lo ves.</li></ul>",
+     "notes": "<p><em>47 años · Gángster veterano · El más guapo · El más bajito</em></p><p>Ratón maduro de porte impecable, pelaje entrecano, tatuajes borrosos en los nudillos y corbata verde oscuro.</p>",
      "description": {
       "background": "Gángster veterano",
       "birthsign": "",
@@ -1053,8 +1053,8 @@
       "max": 2
      },
      "armor": 0,
-     "biography": "<p><em>31 años · Estilo mafioso italiano · El más suertudo · El más lento</em></p><p>Ratón elegante de treinta y pocos, traje oscuro a medida, corbata púrpura y garras recién arregladas. Nervios de acero.</p><p>Lo que esconde está en su dosier secreto.</p>",
-     "notes": "",
+     "biography": "<p class=\"mrrm-lema\"><em>31 años · Estilo mafioso italiano</em><br>«El más suertudo · El más lento»</p><ul class=\"mrrm-esencial\"><li><strong>Seis casillas.</strong> Lo que no cabe se queda en el coche.</li><li><strong>Nervios.</strong> Botón de la barra Reservoir Mice: si fallas, Paranoico o Dedo flojo entra en una casilla libre.</li><li><strong>Tu secreto</strong> está en tu dosier (Diarios › Dosieres secretos). Solo tú lo ves.</li></ul>",
+     "notes": "<p><em>31 años · Estilo mafioso italiano · El más suertudo · El más lento</em></p><p>Ratón elegante de treinta y pocos, traje oscuro a medida, corbata púrpura y garras recién arregladas. Nervios de acero.</p>",
      "description": {
       "background": "Estilo mafioso italiano",
       "birthsign": "",
@@ -1349,8 +1349,8 @@
       "max": 2
      },
      "armor": 0,
-     "biography": "<p><em>41 años · Tipo duro y mecánico · El más listo · El más gafe</em></p><p>Ratón cuarentón con una cicatriz que le cruza el hocico, cadenón de oro, corbata beige y dedos amarillos de tabaco.</p><p>Lo que esconde está en su dosier secreto.</p>",
-     "notes": "",
+     "biography": "<p class=\"mrrm-lema\"><em>41 años · Tipo duro y mecánico</em><br>«El más listo · El más gafe»</p><ul class=\"mrrm-esencial\"><li><strong>Seis casillas.</strong> Lo que no cabe se queda en el coche.</li><li><strong>Nervios.</strong> Botón de la barra Reservoir Mice: si fallas, Paranoico o Dedo flojo entra en una casilla libre.</li><li><strong>Tu secreto</strong> está en tu dosier (Diarios › Dosieres secretos). Solo tú lo ves.</li></ul>",
+     "notes": "<p><em>41 años · Tipo duro y mecánico · El más listo · El más gafe</em></p><p>Ratón cuarentón con una cicatriz que le cruza el hocico, cadenón de oro, corbata beige y dedos amarillos de tabaco.</p>",
      "description": {
       "background": "Tipo duro y mecánico",
       "birthsign": "",
@@ -1798,8 +1798,8 @@
       "max": 2
      },
      "armor": 0,
-     "biography": "<p><em>23 años (aparenta 18) · Agente infiltrado · El más fuerte · El más feo</em></p><p>Ratón grandullón, desgarbado y feo, con una perilla escasa y su primer traje, que le queda como un saco. Corbata plateada.</p><p>Lo que esconde está en su dosier secreto.</p>",
-     "notes": "",
+     "biography": "<p class=\"mrrm-lema\"><em>23 años (aparenta 18) · Agente infiltrado</em><br>«El más fuerte · El más feo»</p><ul class=\"mrrm-esencial\"><li><strong>Seis casillas.</strong> Lo que no cabe se queda en el coche.</li><li><strong>Nervios.</strong> Botón de la barra Reservoir Mice: si fallas, Paranoico o Dedo flojo entra en una casilla libre.</li><li><strong>Tu secreto</strong> está en tu dosier (Diarios › Dosieres secretos). Solo tú lo ves.</li></ul>",
+     "notes": "<p><em>23 años (aparenta 18) · Agente infiltrado · El más fuerte · El más feo</em></p><p>Ratón grandullón, desgarbado y feo, con una perilla escasa y su primer traje, que le queda como un saco. Corbata plateada.</p>",
      "description": {
       "background": "Agente infiltrado",
       "birthsign": "",
@@ -2141,8 +2141,8 @@
       "max": 2
      },
      "armor": 0,
-     "biography": "<p><em>38 años · Sobrino y falsificador del Jefe · Solucionador de problemas</em></p><p>Ratón elegante y tenso, abrigo largo de cuero recortado de un guante humano, carpeta de piel bajo el brazo y cara de estar a dos segundos de un infarto.</p><p>Lo que esconde está en su dosier secreto.</p>",
-     "notes": "",
+     "biography": "<p class=\"mrrm-lema\"><em>38 años · Sobrino y falsificador del Jefe</em><br>«Solucionador de problemas»</p><ul class=\"mrrm-esencial\"><li><strong>Seis casillas.</strong> Lo que no cabe se queda en el coche.</li><li><strong>Nervios.</strong> Botón de la barra Reservoir Mice: si fallas, Paranoico o Dedo flojo entra en una casilla libre.</li><li><strong>Tu secreto</strong> está en tu dosier (Diarios › Dosieres secretos). Solo tú lo ves.</li></ul>",
+     "notes": "<p><em>38 años · Sobrino y falsificador del Jefe · Solucionador de problemas</em></p><p>Ratón elegante y tenso, abrigo largo de cuero recortado de un guante humano, carpeta de piel bajo el brazo y cara de estar a dos segundos de un infarto.</p>",
      "description": {
       "background": "Sobrino y falsificador del Jefe",
       "birthsign": "",
@@ -2481,7 +2481,7 @@
      },
      "armor": 0,
      "biography": "<p>Contacto frío y calculador de Roberto «El Limpiador». No estuvo en la reunión con Don Vito. Lleva toda la tarde tomando notas en una libreta negra. Finge su desaparición por el desagüe para volver a medianoche como el barquero.</p><p><strong>Voz:</strong> Habla bajo, sin prisa, y nunca contesta con un sí o un no.</p><p><em>«Esto huele a muerto.»</em></p>",
-     "notes": "",
+     "notes": "<p>Contacto frío y calculador de Roberto «El Limpiador». No estuvo en la reunión con Don Vito. Lleva toda la tarde tomando notas en una libreta negra. Finge su desaparición por el desagüe para volver a medianoche como el barquero.</p><p><strong>Voz:</strong> Habla bajo, sin prisa, y nunca contesta con un sí o un no.</p><p><em>«Esto huele a muerto.»</em></p>",
      "description": {
       "disposition": ""
      },
@@ -2612,7 +2612,7 @@
      },
      "armor": 1,
      "biography": "<p>El Sr. Gris con chubasquero y sombrero de agua recortados de un guante de fregar, al timón de una lancha de juguete. Decide quién sube.</p><p><strong>Voz:</strong> Sonrisa helada; pide la contraseña sin mirar a nadie.</p><p><em>«No puedo deciros la verdad, porque aquí nadie ha dicho una sola verdad en toda la noche.»</em></p>",
-     "notes": "",
+     "notes": "<p>El Sr. Gris con chubasquero y sombrero de agua recortados de un guante de fregar, al timón de una lancha de juguete. Decide quién sube.</p><p><strong>Voz:</strong> Sonrisa helada; pide la contraseña sin mirar a nadie.</p><p><em>«No puedo deciros la verdad, porque aquí nadie ha dicho una sola verdad en toda la noche.»</em></p>",
      "description": {
       "disposition": ""
      },
@@ -2743,7 +2743,7 @@
      },
      "armor": 0,
      "biography": "<p>«El Sr. Amarillo». Capo veterano de los muelles, voz ronca, borsalino y ninguna paciencia para los idiotas. Organizó el golpe en la cafetería La Lata de Sardinas. Solo aparece en el Flashback 2.</p><p><strong>Voz:</strong> Ronca, a gritos, golpeando la mesa.</p><p><em>«Dísela tú a este ceporro.»</em></p>",
-     "notes": "",
+     "notes": "<p>«El Sr. Amarillo». Capo veterano de los muelles, voz ronca, borsalino y ninguna paciencia para los idiotas. Organizó el golpe en la cafetería La Lata de Sardinas. Solo aparece en el Flashback 2.</p><p><strong>Voz:</strong> Ronca, a gritos, golpeando la mesa.</p><p><em>«Dísela tú a este ceporro.»</em></p>",
      "description": {
       "disposition": ""
      },
@@ -2874,7 +2874,7 @@
      },
      "armor": 0,
      "biography": "<p>Guardia de patrulla, magullado, atado con alambre de bolsa de pan y sin armas. Cuñado del Sr. Verde y padre del pequeño Mikey; compañero de comisaría del Sr. Plata. Solo quiere volver vivo a casa y, si puede, no quemar la tapadera de Plata.</p><p><strong>Voz:</strong> Tartamudea; mira a Verde suplicando y a Plata con pánico.</p><p><em>«Tengo un hijo. Se llama Mikey.»</em></p>",
-     "notes": "",
+     "notes": "<p>Guardia de patrulla, magullado, atado con alambre de bolsa de pan y sin armas. Cuñado del Sr. Verde y padre del pequeño Mikey; compañero de comisaría del Sr. Plata. Solo quiere volver vivo a casa y, si puede, no quemar la tapadera de Plata.</p><p><strong>Voz:</strong> Tartamudea; mira a Verde suplicando y a Plata con pánico.</p><p><em>«Tengo un hijo. Se llama Mikey.»</em></p>",
      "description": {
       "disposition": ""
      },
@@ -2955,7 +2955,7 @@
      },
      "armor": 1,
      "biography": "<p>Patrulla de la Guardia Ratonil. Llegan de tres en tres cuando el cerco se cierra.</p><p><strong>Voz:</strong> Silbatos y órdenes cortas.</p><p><em>«¡Al suelo, las patas donde las vea!»</em></p>",
-     "notes": "",
+     "notes": "<p>Patrulla de la Guardia Ratonil. Llegan de tres en tres cuando el cerco se cierra.</p><p><strong>Voz:</strong> Silbatos y órdenes cortas.</p><p><em>«¡Al suelo, las patas donde las vea!»</em></p>",
      "description": {
       "disposition": ""
      },
@@ -3086,7 +3086,7 @@
      },
      "armor": 1,
      "biography": "<p>El doble de grande que un ratón, musculosa, sucia y territorial. No negocia con ratones trajeados: huele la sangre del Coche 2 y merodea por el desagüe y la salida de emergencia.</p><p><strong>Voz:</strong> Chillidos y dientes.</p>",
-     "notes": "",
+     "notes": "<p>El doble de grande que un ratón, musculosa, sucia y territorial. No negocia con ratones trajeados: huele la sangre del Coche 2 y merodea por el desagüe y la salida de emergencia.</p><p><strong>Voz:</strong> Chillidos y dientes.</p>",
      "description": {
       "disposition": ""
      },
@@ -3217,7 +3217,7 @@
      },
      "armor": 0,
      "biography": "<p>Ha oído golpes en un maletero y se acerca con su farol. Curioso, desconfiado y demasiado viejo para correr.</p><p><strong>Voz:</strong> Masculla con la pipa entre los dientes.</p><p><em>«Ahí dentro hay alguien.»</em></p>",
-     "notes": "",
+     "notes": "<p>Ha oído golpes en un maletero y se acerca con su farol. Curioso, desconfiado y demasiado viejo para correr.</p><p><strong>Voz:</strong> Masculla con la pipa entre los dientes.</p><p><em>«Ahí dentro hay alguien.»</em></p>",
      "description": {
       "disposition": ""
      },
@@ -3298,7 +3298,7 @@
      },
      "armor": 0,
      "biography": "<p>Viejo contrabandista malherido por las ratas. Se arrastra hasta el almacén con dos monedas de oro y un aviso.</p><p><strong>Voz:</strong> Jadea; agarra la pata de quien tenga más cerca.</p><p><em>«El barquero amarillo no os llevará sin esto… y ya ha vendido a la mitad de los vuestros.»</em></p>",
-     "notes": "",
+     "notes": "<p>Viejo contrabandista malherido por las ratas. Se arrastra hasta el almacén con dos monedas de oro y un aviso.</p><p><strong>Voz:</strong> Jadea; agarra la pata de quien tenga más cerca.</p><p><em>«El barquero amarillo no os llevará sin esto… y ya ha vendido a la mitad de los vuestros.»</em></p>",
      "description": {
       "disposition": ""
      },
@@ -3379,7 +3379,7 @@
      },
      "armor": 0,
      "biography": "<p>Ratoncillo vagabundo que intenta robar una rueda de un coche aparcado fuera. Si lo encañonan, canta: vio a un tipo con libreta hablando con la Guardia hace media hora.</p><p><strong>Voz:</strong> Habla muy rápido y miente peor.</p><p><em>«¡Yo no he visto nada! Bueno, un poco.»</em></p>",
-     "notes": "",
+     "notes": "<p>Ratoncillo vagabundo que intenta robar una rueda de un coche aparcado fuera. Si lo encañonan, canta: vio a un tipo con libreta hablando con la Guardia hace media hora.</p><p><strong>Voz:</strong> Habla muy rápido y miente peor.</p><p><em>«¡Yo no he visto nada! Bueno, un poco.»</em></p>",
      "description": {
       "disposition": ""
      },
@@ -6151,7 +6151,7 @@
       },
       "flags": {},
       "text": {
-       "content": "<div class=\"mrrm-diario\"><p class=\"mrrm-kicker\">00 · Cómo se juega en Foundry</p>\n<p>Todo lo de la mesa está en la barra de herramientas de la izquierda, en el grupo <strong>Reservoir Mice</strong> (icono de saco de dinero), y en el <strong>Panel del DJ</strong>:</p>\n<ul><li><strong>La banda.</strong> Elige qué jugador lleva cada ratón. Recibe la ficha, su dosier secreto se le abre en pantalla y nadie más puede leerlo.</li>\n<li><strong>La noche.</strong> Los tres relojes (hora, cerco y paranoia) se ven en una esquina de la pantalla de todos. Al avanzarlos, la mesa ve un rótulo grande; tú recibes en privado lo que toca hacer. Apunta aquí la contraseña del Flashback 2.</li>\n<li><strong>Reglas del golpe.</strong> Salvación de nervios para los ratones marcados (mete Paranoico o Dedo flojo en una casilla libre), la rueda del Flashback 1 y el <strong>duelo de miradas</strong>: cada jugador elige en secreto a quién apunta y tú lo revelas de golpe.</li>\n<li><strong>Ayudas.</strong> La pintada a toda la mesa, la libreta del Sr. Gris solo al elegido y el plano del almacén.</li></ul>\n<p>Los jugadores tienen en la misma barra su botón de <strong>Salvación de nervios</strong>. Las fichas de la banda tienen seis casillas: la parte de la mochila que no existe está tapada por «Sin sitio».</p>\n<p><strong>Integraciones.</strong> Con <em>MR- Dirección</em> activo, sus escenas, música, motivos, efectos, figuras e hitos aparecen en su barra. Con <em>MR- Pizarra</em> activo, el botón <em>Pizarra de sospechas</em> la deja preparada por capas para ir revelándola.</p></div>",
+       "content": "<div class=\"mrrm-diario\"><p class=\"mrrm-kicker\">00 · Cómo se juega en Foundry</p>\n<p>Todo lo de la mesa está en la barra de herramientas de la izquierda, en el grupo <strong>Reservoir Mice</strong> (icono de saco de dinero), y en el <strong>Panel del DJ</strong>:</p>\n<ul><li><strong>La banda.</strong> Elige qué jugador lleva cada ratón. Recibe la ficha, su dosier secreto se le abre en pantalla y nadie más puede leerlo.</li>\n<li><strong>La noche.</strong> Los tres relojes (hora, cerco y paranoia) se ven en una esquina de la pantalla de todos. Al avanzarlos, la mesa ve un rótulo grande; tú recibes en privado lo que toca hacer. Apunta aquí la contraseña del Flashback 2.</li>\n<li><strong>Reglas del golpe.</strong> Salvación de nervios para los ratones marcados (mete Paranoico o Dedo flojo en una casilla libre), la rueda del Flashback 1 y el <strong>duelo de miradas</strong>: cada jugador elige en secreto a quién apunta y tú lo revelas de golpe.</li>\n<li><strong>Ayudas.</strong> La pintada a toda la mesa, la libreta del Sr. Gris solo al elegido y el plano del almacén.</li></ul>\n<p>Los jugadores tienen en la misma barra su botón de <strong>Salvación de nervios</strong>. Las fichas de la banda tienen seis casillas: la parte de la mochila que no existe está tapada por «Sin sitio».</p>\n<p><strong>Integraciones.</strong> Con <em>MR- Dirección</em> activo, sus escenas, música, motivos, efectos, figuras e hitos aparecen en su barra. Con <em>MR- Pizarra</em> activo, el botón <em>Pizarra de sospechas</em> la deja preparada por capas para ir revelándola.</p>\n<p><strong>Banda sonora.</strong> Como en la película, la música es la radio de los setenta: en el almacén suena por un transistor y en los flashbacks y el clímax suena limpia. Música de Kevin MacLeod (incompetech.com), con licencia CC BY 4.0: «Style Funk», «Late Night Radio», «Mistake the Getaway», «Covert Affair», «Fork and Spoon», «Whiskey on the Mississippi», «Spy Groove», «Night on the Docks - Sax», «DD Groove», «On the Ground», «Dances and Dames», «Pulse», «Western Streets», «Clean Soul», «Bass Walker», «Long Note Two», «Got Funk», «Night on the Docks - Trumpet». Efectos y ambientes de Freesound.org, de dominio público (CC0). Créditos completos en el NOTICE del módulo.</p></div>",
        "format": 1
       }
      },
@@ -8911,7 +8911,7 @@
      {
       "_id": "7hQsi72WJZ95Dt7r",
       "name": "Reservoir Mice (tema)",
-      "description": "",
+      "description": "«Style Funk» de Kevin MacLeod (incompetech.com), CC BY 4.0",
       "path": "modules/mr-reservoir-mice/assets/audio/music/tema.ogg",
       "channel": "music",
       "playing": false,
@@ -8929,7 +8929,7 @@
      {
       "_id": "ynyfmloNLWoVraJQ",
       "name": "La espera",
-      "description": "",
+      "description": "«Late Night Radio» de Kevin MacLeod (incompetech.com), CC BY 4.0",
       "path": "modules/mr-reservoir-mice/assets/audio/music/espera.ogg",
       "channel": "music",
       "playing": false,
@@ -8947,7 +8947,7 @@
      {
       "_id": "hTr97bp5b2dnr89F",
       "name": "La huida",
-      "description": "",
+      "description": "«Mistake the Getaway» de Kevin MacLeod (incompetech.com), CC BY 4.0",
       "path": "modules/mr-reservoir-mice/assets/audio/music/huida.ogg",
       "channel": "music",
       "playing": false,
@@ -8965,7 +8965,7 @@
      {
       "_id": "mYvqcW7X8Z9l0xEJ",
       "name": "El botín",
-      "description": "",
+      "description": "«Covert Affair» de Kevin MacLeod (incompetech.com), CC BY 4.0",
       "path": "modules/mr-reservoir-mice/assets/audio/music/botin.ogg",
       "channel": "music",
       "playing": false,
@@ -8983,7 +8983,7 @@
      {
       "_id": "dtS3zpZjOZMsOnJ4",
       "name": "El desagüe",
-      "description": "",
+      "description": "«Fork and Spoon» de Kevin MacLeod (incompetech.com), CC BY 4.0",
       "path": "modules/mr-reservoir-mice/assets/audio/music/desague.ogg",
       "channel": "music",
       "playing": false,
@@ -9001,7 +9001,7 @@
      {
       "_id": "NhE3eIzX1ndnyaIW",
       "name": "La Lata de Sardinas",
-      "description": "",
+      "description": "«Whiskey on the Mississippi» de Kevin MacLeod (incompetech.com), CC BY 4.0",
       "path": "modules/mr-reservoir-mice/assets/audio/music/sardinas.ogg",
       "channel": "music",
       "playing": false,
@@ -9019,7 +9019,7 @@
      {
       "_id": "tLI0hpSdSR2dWn14",
       "name": "Medianoche",
-      "description": "",
+      "description": "«Spy Groove» de Kevin MacLeod (incompetech.com), CC BY 4.0",
       "path": "modules/mr-reservoir-mice/assets/audio/music/medianoche.ogg",
       "channel": "music",
       "playing": false,
@@ -9037,7 +9037,7 @@
      {
       "_id": "QVHM5a5ldXhmEwQB",
       "name": "Otra vida",
-      "description": "",
+      "description": "«Night on the Docks - Sax» de Kevin MacLeod (incompetech.com), CC BY 4.0",
       "path": "modules/mr-reservoir-mice/assets/audio/music/epilogo.ogg",
       "channel": "music",
       "playing": false,
@@ -9055,7 +9055,7 @@
      {
       "_id": "tYBvbsZHSmzmc2vV",
       "name": "Amanecer en tierra",
-      "description": "",
+      "description": "«DD Groove» de Kevin MacLeod (incompetech.com), CC BY 4.0",
       "path": "modules/mr-reservoir-mice/assets/audio/music/amanecer.ogg",
       "channel": "music",
       "playing": false,
@@ -9096,7 +9096,7 @@
      {
       "_id": "Q988qZzGGnh2NzgT",
       "name": "Tensión",
-      "description": "",
+      "description": "«On the Ground» de Kevin MacLeod (incompetech.com), CC BY 4.0",
       "path": "modules/mr-reservoir-mice/assets/audio/moods/tension.ogg",
       "channel": "music",
       "playing": false,
@@ -9114,7 +9114,7 @@
      {
       "_id": "ficrrcskCQHEaiSp",
       "name": "Paranoia",
-      "description": "",
+      "description": "«Dances and Dames» de Kevin MacLeod (incompetech.com), CC BY 4.0",
       "path": "modules/mr-reservoir-mice/assets/audio/moods/paranoia.ogg",
       "channel": "music",
       "playing": false,
@@ -9132,7 +9132,7 @@
      {
       "_id": "1tCUUCjvrKKiLRdg",
       "name": "Persecución",
-      "description": "",
+      "description": "«Pulse» de Kevin MacLeod (incompetech.com), CC BY 4.0",
       "path": "modules/mr-reservoir-mice/assets/audio/moods/persecucion.ogg",
       "channel": "music",
       "playing": false,
@@ -9150,7 +9150,7 @@
      {
       "_id": "Jj4Co9uzJ3PZxvbv",
       "name": "Duelo",
-      "description": "",
+      "description": "«Western Streets» de Kevin MacLeod (incompetech.com), CC BY 4.0",
       "path": "modules/mr-reservoir-mice/assets/audio/moods/standoff.ogg",
       "channel": "music",
       "playing": false,
@@ -9168,7 +9168,7 @@
      {
       "_id": "43gQ3pKmCiBpam1G",
       "name": "Calma tensa",
-      "description": "",
+      "description": "«Clean Soul» de Kevin MacLeod (incompetech.com), CC BY 4.0",
       "path": "modules/mr-reservoir-mice/assets/audio/moods/calma.ogg",
       "channel": "music",
       "playing": false,
@@ -9186,7 +9186,7 @@
      {
       "_id": "VsPR12cErujrRShT",
       "name": "Misterio",
-      "description": "",
+      "description": "«Bass Walker» de Kevin MacLeod (incompetech.com), CC BY 4.0",
       "path": "modules/mr-reservoir-mice/assets/audio/moods/misterio.ogg",
       "channel": "music",
       "playing": false,
@@ -9204,7 +9204,7 @@
      {
       "_id": "xptKCsJBPjtxrENh",
       "name": "A oscuras",
-      "description": "",
+      "description": "«Long Note Two» de Kevin MacLeod (incompetech.com), CC BY 4.0",
       "path": "modules/mr-reservoir-mice/assets/audio/moods/oscuridad.ogg",
       "channel": "music",
       "playing": false,
@@ -9222,7 +9222,7 @@
      {
       "_id": "CnN797Qdo36YDZCn",
       "name": "Triunfo",
-      "description": "",
+      "description": "«Got Funk» de Kevin MacLeod (incompetech.com), CC BY 4.0",
       "path": "modules/mr-reservoir-mice/assets/audio/moods/triunfo.ogg",
       "channel": "music",
       "playing": false,
@@ -9240,7 +9240,7 @@
      {
       "_id": "jUnweLkyV3tiVeqK",
       "name": "Derrota",
-      "description": "",
+      "description": "«Night on the Docks - Trumpet» de Kevin MacLeod (incompetech.com), CC BY 4.0",
       "path": "modules/mr-reservoir-mice/assets/audio/moods/derrota.ogg",
       "channel": "music",
       "playing": false,
@@ -9281,7 +9281,7 @@
      {
       "_id": "CsvePckZxyzxWjX0",
       "name": "Agua bajo el muelle",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Reservoir Mice",
       "path": "modules/mr-reservoir-mice/assets/audio/ambient/muelle.ogg",
       "channel": "environment",
       "playing": false,
@@ -9299,7 +9299,7 @@
      {
       "_id": "mgfZfNWcee6YsKOd",
       "name": "Zumbido de la pila",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Reservoir Mice",
       "path": "modules/mr-reservoir-mice/assets/audio/ambient/zumbido.ogg",
       "channel": "environment",
       "playing": false,
@@ -9340,7 +9340,7 @@
      {
       "_id": "bp0Jx4FMBjZnXRlS",
       "name": "Disparo",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Reservoir Mice",
       "path": "modules/mr-reservoir-mice/assets/audio/sfx/disparo.ogg",
       "channel": "interface",
       "playing": false,
@@ -9358,7 +9358,7 @@
      {
       "_id": "tsSv6uBOTVabqHdS",
       "name": "Amartillar",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Reservoir Mice",
       "path": "modules/mr-reservoir-mice/assets/audio/sfx/amartillar.ogg",
       "channel": "interface",
       "playing": false,
@@ -9376,7 +9376,7 @@
      {
       "_id": "knWWoAzSIFiE4aJd",
       "name": "Golpes en el maletero",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Reservoir Mice",
       "path": "modules/mr-reservoir-mice/assets/audio/sfx/golpes-maletero.ogg",
       "channel": "interface",
       "playing": false,
@@ -9394,7 +9394,7 @@
      {
       "_id": "M0AfQFiQrza1dYOr",
       "name": "La persiana",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Reservoir Mice",
       "path": "modules/mr-reservoir-mice/assets/audio/sfx/persiana.ogg",
       "channel": "interface",
       "playing": false,
@@ -9412,7 +9412,7 @@
      {
       "_id": "fvd8Fqois6xmRkCf",
       "name": "Chispazo de la pila",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Reservoir Mice",
       "path": "modules/mr-reservoir-mice/assets/audio/sfx/chispazo.ogg",
       "channel": "interface",
       "playing": false,
@@ -9430,7 +9430,7 @@
      {
       "_id": "R2nBwZHwjCw2eHTx",
       "name": "Doce campanadas",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Reservoir Mice",
       "path": "modules/mr-reservoir-mice/assets/audio/sfx/campanadas.ogg",
       "channel": "interface",
       "playing": false,
@@ -9448,7 +9448,7 @@
      {
       "_id": "iVO2gfEklxvfKLWE",
       "name": "Sirenas",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Reservoir Mice",
       "path": "modules/mr-reservoir-mice/assets/audio/sfx/sirena.ogg",
       "channel": "interface",
       "playing": false,
@@ -9466,7 +9466,7 @@
      {
       "_id": "gPdVu5TdYuFgGZTy",
       "name": "Sirenas lejanas",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Reservoir Mice",
       "path": "modules/mr-reservoir-mice/assets/audio/sfx/sirenaLejos.ogg",
       "channel": "interface",
       "playing": false,
@@ -9484,7 +9484,7 @@
      {
       "_id": "RZno9LhUdq0JUPTq",
       "name": "Motor de la lancha",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Reservoir Mice",
       "path": "modules/mr-reservoir-mice/assets/audio/sfx/motor-lancha.ogg",
       "channel": "interface",
       "playing": false,
@@ -9502,7 +9502,7 @@
      {
       "_id": "YkFbZTAshFcqn8oY",
       "name": "El gato del Gigante",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Reservoir Mice",
       "path": "modules/mr-reservoir-mice/assets/audio/sfx/maullido.ogg",
       "channel": "interface",
       "playing": false,
@@ -9520,7 +9520,7 @@
      {
       "_id": "IBY39x24fPIEaYOU",
       "name": "Radio de la Guardia",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Reservoir Mice",
       "path": "modules/mr-reservoir-mice/assets/audio/sfx/radio.ogg",
       "channel": "interface",
       "playing": false,
@@ -9538,7 +9538,7 @@
      {
       "_id": "bfZUY8LUrlIYzEh2",
       "name": "Ratas",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Reservoir Mice",
       "path": "modules/mr-reservoir-mice/assets/audio/sfx/rata.ogg",
       "channel": "interface",
       "playing": false,
@@ -9556,7 +9556,7 @@
      {
       "_id": "CilDNlCzi90vLIWV",
       "name": "Latido",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Reservoir Mice",
       "path": "modules/mr-reservoir-mice/assets/audio/sfx/latido.ogg",
       "channel": "interface",
       "playing": false,
@@ -9574,7 +9574,7 @@
      {
       "_id": "1OY03VLxPk2amRZP",
       "name": "Tictac",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Reservoir Mice",
       "path": "modules/mr-reservoir-mice/assets/audio/sfx/tictac.ogg",
       "channel": "interface",
       "playing": false,
@@ -9592,7 +9592,7 @@
      {
       "_id": "kD2Jyl4DJa2tOlRc",
       "name": "La pintada",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Reservoir Mice",
       "path": "modules/mr-reservoir-mice/assets/audio/sfx/pintada.ogg",
       "channel": "interface",
       "playing": false,
@@ -9610,7 +9610,7 @@
      {
       "_id": "8PdkqCmRws5Q8bmd",
       "name": "Duelo",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Reservoir Mice",
       "path": "modules/mr-reservoir-mice/assets/audio/sfx/standoff.ogg",
       "channel": "interface",
       "playing": false,
@@ -9802,7 +9802,7 @@
   "sort": 0,
   "flags": {
    "mr-reservoir-mice": {
-    "version": "1.0.2"
+    "version": "1.1.0"
    }
   }
  }

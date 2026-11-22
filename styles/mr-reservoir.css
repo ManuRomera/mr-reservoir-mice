@@ -175,3 +175,130 @@ body.mrrm-alto-contraste { --rm-papel: #fffdf6; --rm-papel2: #fff4cf; --rm-gris:
 .mrrm-dosier dl { display: grid; grid-template-columns: max-content 1fr; gap: .15rem .6rem; }
 .mrrm-dosier dt { font-weight: bold; }
 .mrrm-dosier dd { margin: 0; }
+
+/* ---------------- Piel Reservoir Mice de lo nativo de Mausritter: fichas, tarjetas de tirada y diálogos de tirada ----------------
+   Solo aspecto. Colores en variables: claro por defecto y oscuro cuando MR- Mausritter en español activa su tema (.mrm-dark).
+   El prefijo largo gana a los !important de sus temas oscuro y de contraste sin tocar sus datos ni sus botones. */
+.mrrm-piel {
+  --rmp-papel: #f1e8d2; --rmp-papel2: #e4d7b8; --rmp-campo: #fffaf0; --rmp-texto: #161412; --rmp-suave: #5f5a52; --rmp-borde: #161412;
+  --rmp-banda: #161412; --rmp-banda-txt: #f2c21b; --rmp-amarillo: #f2c21b; --rmp-rojo: #b81d13; --rmp-sangre: #8e2a1c; --rmp-tinta: #161412;
+  --rmp-franja: #f2c21b; --rmp-sello: #b81d13;
+}
+:root.mrm-dark .mrrm-piel {
+  --rmp-papel: #1d1a16; --rmp-papel2: #2a251e; --rmp-campo: #14120f; --rmp-texto: #f1e8d2; --rmp-suave: #cbbfa6; --rmp-borde: #d9c9a3;
+  --rmp-banda: #000; --rmp-sangre: #ff8a7a; --rmp-franja: #5c4a0e; --rmp-sello: #ff6b5e;
+}
+:root body.mrrm-piel-on .mrrm-piel.mrrm-piel {
+  /* ---- tarjetas de tirada del chat ---- */
+  & .mausritter .rollcontainer {
+    background: linear-gradient(94deg, transparent 0 71%, var(--rmp-franja) 71% 95%, transparent 95%) var(--rmp-papel) !important;
+    color: var(--rmp-texto) !important; border: 3px solid var(--rmp-borde) !important; border-radius: 0 !important;
+    box-shadow: 5px 5px 0 var(--rmp-amarillo), 5px 5px 0 2px var(--rmp-borde) !important; padding: 0 .55rem .45rem !important; overflow: hidden;
+    font-family: "RM Crimson", serif !important; font-size: calc(1em * var(--rm-escala));
+  }
+  & .mausritter :is(.rollh1, .rollweaponh1) {
+    background: linear-gradient(90deg, var(--rmp-banda) 0 86%, #fffaf0 86% 88.5%, var(--rmp-banda) 88.5% 89.5%, #fffaf0 89.5% 92%, var(--rmp-banda) 92%) !important;
+    color: var(--rmp-banda-txt) !important; border: 0 !important; border-bottom: 4px solid var(--rmp-amarillo) !important;
+    font-family: "RM Anton", sans-serif !important; font-size: 1.65rem !important; line-height: 1.15; text-transform: uppercase;
+    letter-spacing: .03em; padding: .3rem 2.2rem .3rem .6rem !important; margin: 0 -.55rem !important; width: auto !important; height: auto !important;
+    text-shadow: 2px 2px 0 #8e2a1c;
+  }
+  & .mausritter .flexrow:has(> .rollweaponh1) { height: auto !important; align-items: stretch; margin: 0 -.55rem; }
+  & .mausritter .flexrow > .rollweaponh1 { margin: 0 !important; }
+  & .mausritter .roll-image { flex: 0 0 58px; width: 58px; height: 58px; object-fit: contain; border: 0 !important; border-left: 3px solid var(--rmp-borde) !important;
+    background: var(--rmp-amarillo) !important; margin: 0 !important; }
+  & .mausritter .rollh2 { font-family: "RM Bebas", sans-serif !important; font-size: 2.1rem !important; letter-spacing: .06em; text-transform: uppercase;
+    color: var(--rmp-sangre) !important; background: none !important; margin: .35rem 0 .1rem !important; }
+  & .mausritter .roll-result {
+    font-family: "RM Anton", sans-serif !important; font-size: 2.6rem !important; line-height: 1.1; color: var(--rmp-tinta) !important;
+    background: var(--rmp-amarillo) !important; border: 3px solid var(--rmp-tinta) !important; border-radius: 0 !important;
+    box-shadow: 4px 4px 0 var(--rmp-sangre) !important; transform: rotate(-1.5deg); padding: .1rem .4rem !important;
+  }
+  & .mausritter .roll-target { background: none !important; color: var(--rmp-texto) !important; font-family: "RM Bebas", sans-serif !important;
+    font-size: 1.35rem !important; letter-spacing: .05em; text-transform: uppercase; gap: .8rem !important; padding: .7rem .3rem .4rem !important; }
+  & .mausritter .roll-targetbox { background: var(--rmp-banda) !important; color: var(--rmp-banda-txt) !important; border: 0 !important; border-radius: 0 !important;
+    font-family: "RM Anton", sans-serif !important; font-size: 1.15rem !important; }
+  & .mausritter :is(.rollmods, .rollmods .valuetext) { font-family: "RM Maquina", monospace !important; color: var(--rmp-suave) !important; font-size: .8rem !important;
+    margin-top: 0 !important; letter-spacing: .02em; }
+  & .mausritter .roll-damage { font-family: "RM Bebas", sans-serif !important; font-size: 1.9rem !important; letter-spacing: .07em; text-transform: uppercase;
+    color: var(--rmp-texto) !important; margin-top: .5rem !important; }
+  & .mausritter .roll-damagebox {
+    background: transparent !important; color: var(--rmp-sello) !important; border: 4px solid var(--rmp-sello) !important; border-radius: 3px !important;
+    font-family: "RM Anton", sans-serif !important; font-size: 2.4rem !important; line-height: 1.1; padding: .1rem 1.2rem !important;
+    transform: rotate(-4deg); letter-spacing: .06em; width: max-content; max-width: 100%;
+  }
+  & .mausritter .description { background: none !important; border-color: var(--rmp-borde) !important; }
+  & .mausritter .description .header { font-family: "RM Bebas", sans-serif !important; letter-spacing: .05em; color: var(--rmp-texto) !important;
+    background: none !important; border-bottom: 3px solid var(--rmp-amarillo) !important; }
+  & .mausritter .description .body { color: var(--rmp-texto) !important; background: none !important; }
+  & .mausritter .rollcontainer button { font-family: "RM Bebas", sans-serif !important; font-size: 1.1rem !important; letter-spacing: .05em;
+    background: var(--rmp-amarillo) !important; color: var(--rmp-tinta) !important; border: 2px solid var(--rmp-tinta) !important; border-radius: 0 !important;
+    box-shadow: 2px 2px 0 var(--rmp-borde) !important; }
+  & .mausritter .rollcontainer button:hover:not(:disabled) { background: var(--rmp-banda) !important; color: var(--rmp-banda-txt) !important; }
+
+  /* ---- ventanas: diálogos de tirada y fichas ---- */
+  &:is(.mrrm-piel-dialogo, .mrrm-piel-ficha) { border: 3px solid var(--rmp-borde); border-radius: 0; box-shadow: 6px 6px 0 var(--rmp-amarillo), 6px 6px 0 2px var(--rmp-borde); }
+  &.mrrm-piel-dialogo { height: auto !important; min-width: 340px; }
+  &:is(.mrrm-piel-dialogo, .mrrm-piel-ficha) .window-header { background: var(--rmp-banda) !important; color: var(--rmp-banda-txt) !important; border-bottom: 4px solid var(--rmp-amarillo) !important; }
+  &:is(.mrrm-piel-dialogo, .mrrm-piel-ficha) .window-header :is(.window-title, h4) { font-family: "RM Bebas", sans-serif !important; font-size: 1.3em; letter-spacing: .07em; color: var(--rmp-banda-txt) !important; }
+  &:is(.mrrm-piel-dialogo, .mrrm-piel-ficha) .window-content {
+    background: linear-gradient(94deg, transparent 0 80%, var(--rmp-franja) 80% 96%, transparent 96%) var(--rmp-papel) !important;
+    color: var(--rmp-texto) !important;
+  }
+  &.mrrm-piel-ficha .window-content { background: var(--rmp-papel) !important; }
+  &.mrrm-piel-dialogo .window-content { font-size: calc(14px * var(--rm-escala)); }
+  &.mrrm-piel-dialogo h2 { font-family: "RM Anton", sans-serif !important; text-transform: uppercase; font-size: 1.55em !important; letter-spacing: .02em;
+    color: var(--rmp-texto) !important; border: 0 !important; border-bottom: 5px solid var(--rmp-amarillo) !important; margin: .2rem 0 .7rem !important; }
+  &.mrrm-piel-dialogo :is(select, input) { font-family: "RM Bebas", sans-serif !important; font-size: 1.3em !important; letter-spacing: .04em; height: auto !important;
+    background: var(--rmp-campo) !important; color: var(--rmp-texto) !important; border: 2px solid var(--rmp-borde) !important; border-radius: 0 !important;
+    box-shadow: 3px 3px 0 var(--rmp-amarillo); padding: .15rem .4rem !important; }
+  &.mrrm-piel-dialogo :is(select, input):focus-visible { outline: 3px solid var(--rmp-rojo); outline-offset: 1px; }
+  &.mrrm-piel-dialogo .dialog-buttons { gap: .5rem; }
+  &.mrrm-piel-dialogo .dialog-buttons button {
+    font-family: "RM Bebas", sans-serif !important; font-size: 1.35em !important; letter-spacing: .06em; line-height: 1.7;
+    background: var(--rmp-amarillo) !important; color: var(--rmp-tinta) !important; border: 2px solid var(--rmp-tinta) !important; border-radius: 0 !important;
+    box-shadow: 3px 3px 0 var(--rmp-borde) !important;
+  }
+  &.mrrm-piel-dialogo .dialog-buttons button:first-child { background: var(--rmp-banda) !important; color: var(--rmp-banda-txt) !important; }
+  &.mrrm-piel-dialogo .dialog-buttons button:hover { background: var(--rmp-banda) !important; color: var(--rmp-banda-txt) !important; }
+  &.mrrm-piel-dialogo .dialog-buttons button:focus-visible { outline: 3px solid #1E40AF; outline-offset: 2px; }
+
+  /* ---- fichas de actor ---- */
+  &.mrrm-piel-ficha {
+    & :is(.header-border, .blockborder, .creaturedescription, .creature-abilities) {
+      background: var(--rmp-papel) !important; border: 3px solid var(--rmp-borde) !important; border-radius: 0 !important;
+      box-shadow: 4px 4px 0 var(--rmp-amarillo) !important; outline: 0 !important; color: var(--rmp-texto) !important;
+    }
+    & .headerinputtext { background: var(--rmp-banda) !important; color: var(--rmp-banda-txt) !important; font-family: "RM Bebas", sans-serif !important;
+      letter-spacing: .05em; text-transform: uppercase; }
+    & .headerinputfield input, & input.noborder { color: var(--rmp-texto) !important; background: transparent !important; font-family: "RM Maquina", monospace !important; }
+    & h1.charname input, & .charname > input[name="name"] { font-family: "RM Anton", sans-serif !important; text-transform: uppercase; letter-spacing: 0; font-size: 1.45rem !important;
+      color: var(--rmp-texto) !important; background: var(--rmp-papel) !important; border: 3px solid var(--rmp-borde) !important; border-radius: 0 !important; }
+    & :is(.statName, .creaturestat, .creature-header, .creaturename) { font-family: "RM Anton", sans-serif !important; color: var(--rmp-texto) !important; letter-spacing: .02em; }
+    & .rollable:is(:hover, :focus-visible) { color: var(--rmp-sangre) !important; text-shadow: 1px 1px 0 var(--rmp-amarillo); }
+    & :is(.minmax-input, .darkGreyText) { font-family: "RM Anton", sans-serif !important; color: var(--rmp-texto) !important; background: transparent !important; }
+    & :is(.current-max-label, .littleLabel) { font-family: "RM Bebas", sans-serif !important; color: var(--rmp-suave) !important; letter-spacing: .05em; }
+    & .seperatorLine { border-bottom: 2px solid var(--rmp-borde) !important; }
+    & .slant { border-right: 2px solid var(--rmp-borde) !important; }
+    & :is(.portrait, .portrait-creature) { border: 6px solid #fffaf0 !important; border-radius: 0 !important; outline: 2px solid var(--rmp-borde) !important;
+      box-shadow: 7px 7px 0 var(--rm-color-raton, var(--rmp-amarillo)) !important; background: var(--rm-color-raton, var(--rmp-amarillo)) !important; transform: rotate(1.2deg); }
+    & :is(.editor-content, .editor) { color: var(--rmp-texto) !important; }
+    & .editor-content :is(h1, h2, h3) { font-family: "RM Bebas", sans-serif !important; letter-spacing: .05em; color: var(--rmp-texto) !important;
+      border-bottom: 3px solid var(--rmp-amarillo) !important; }
+    & .mrrm-lema { font-family: "RM Maquina", monospace; font-size: .92em; margin: 0 0 .3rem; color: var(--rmp-texto); }
+    & .mrrm-esencial { margin: .2rem 0 .1rem; padding-left: 1.1rem; font-size: .9em; color: var(--rmp-texto); }
+    & .mrrm-esencial strong { font-family: "RM Bebas", sans-serif; font-weight: normal; letter-spacing: .05em; font-size: 1.12em; }
+    & nav.sheet-tabs { background: var(--rmp-banda) !important; border: 0 !important; border-top: 4px solid var(--rmp-amarillo) !important; border-bottom: 4px solid var(--rmp-amarillo) !important; }
+    & nav.sheet-tabs .tab-select { font-family: "RM Bebas", sans-serif !important; font-size: 1.45rem; letter-spacing: .07em; text-transform: uppercase;
+      color: var(--rmp-banda-txt) !important; text-shadow: none !important; }
+    & nav.sheet-tabs .tab-select.active { background: var(--rmp-amarillo) !important; color: var(--rmp-tinta) !important; }
+    & .item-container { background: var(--rmp-papel2) !important; border: 3px solid var(--rmp-borde) !important; border-radius: 0 !important; }
+    & .item-card { border: 2px solid var(--rmp-tinta) !important; border-radius: 0 !important; box-shadow: 3px 3px 0 var(--rmp-amarillo); }
+    & .item-card-header { background: var(--rmp-banda) !important; border-bottom: 3px solid var(--rmp-amarillo) !important; }
+    & .item-card-title { font-family: "RM Bebas", sans-serif !important; letter-spacing: .04em; color: var(--rmp-banda-txt) !important; }
+    & :is(.item-slot-header, .item-bag-text, .item-slot-footer) { font-family: "RM Bebas", sans-serif !important; color: var(--rmp-suave) !important; letter-spacing: .05em; }
+    & .item-slot-dashed { border-color: var(--rmp-suave) !important; }
+    & :is(.item-create, .item-header) { font-family: "RM Bebas", sans-serif !important; color: var(--rmp-texto) !important; letter-spacing: .05em; }
+    & .tab.biography { background: var(--rmp-papel) !important; color: var(--rmp-texto) !important; }
+  }
+}

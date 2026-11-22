@@ -12,6 +12,8 @@ sys.path.insert(0, str(R / "texto")); sys.path.insert(0, str(R / "tools"))
 sys.path.insert(0, "/Volumes/Datos_Dock/FoundryVTT/Trabajo LOGO/marca")
 import datos as D  # noqa: E402
 import md  # noqa: E402
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from banda import MUSICA as BANDA_MUSICA  # noqa: E402
 import marca  # noqa: E402
 
 ID = "mr-reservoir-mice"
@@ -114,10 +116,15 @@ def token(slug, nombre, disp, tam=1, link=False, vision=False):
 
 def ficha_pj(p, tipo="pj"):
     inv = [item_doc(s, *CASILLAS[k], suf=":" + p["slug"]) for k, s in p["inv"].items()] + [bloqueo(":" + p["slug"])]
-    bio = (f"<p><em>{esc(p['edad'])} · {esc(p['rol'])} · {esc(p['lema'])}</em></p><p>{esc(p['aspecto'])}</p>"
-           + (f"<p>{esc(p['extra'])}</p>" if p.get("extra") else "") + "<p>Lo que esconde está en su dosier secreto.</p>")
+    # el cuadro de la ficha solo lleva lo esencial para jugar; el retrato completo va a Notas
+    bio = (f'<p class="mrrm-lema"><em>{esc(p["edad"])} · {esc(p["rol"])}</em><br>«{esc(p["lema"])}»</p>'
+           '<ul class="mrrm-esencial"><li><strong>Seis casillas.</strong> Lo que no cabe se queda en el coche.</li>'
+           '<li><strong>Nervios.</strong> Botón de la barra Reservoir Mice: si fallas, Paranoico o Dedo flojo entra en una casilla libre.</li>'
+           '<li><strong>Tu secreto</strong> está en tu dosier (Diarios › Dosieres secretos). Solo tú lo ves.</li></ul>')
+    notas = (f"<p><em>{esc(p['edad'])} · {esc(p['rol'])} · {esc(p['lema'])}</em></p><p>{esc(p['aspecto'])}</p>"
+             + (f"<p>{esc(p['extra'])}</p>" if p.get("extra") else ""))
     return dict(_id=uid("actor:" + p["slug"]), name=p["n"], type="character", img=img(f"assets/actors/portraits/{p['slug']}.webp"),
-                system=dict(health=dict(value=p["pg"], min=0, max=p["pg"]), hits=dict(value=2, max=2), armor=0, biography=bio, notes="",
+                system=dict(health=dict(value=p["pg"], min=0, max=p["pg"]), hits=dict(value=2, max=2), armor=0, biography=bio, notes=notas,
                             description=dict(background=p["rol"], birthsign="", coat="", look=p["aspecto"]), level=dict(value=1, xp=0), pips=dict(value=p["pepitas"]),
                             grit=dict(value=0, ignored=""), stats=stats(p["fue"], p["des"], p["vol"]), other=dict(grit=dict(value=0))),
                 prototypeToken=token(p["slug"], p["n"], 1, 1, True, True), items=inv, effects=[], folder=FOLD[("Actor", "La banda")], sort=0,
@@ -132,7 +139,7 @@ def ficha_pnj(n):
     bio = f"<p>{esc(n['d'])}</p><p><strong>Voz:</strong> {esc(n['voz'])}</p>" + (f"<p><em>{esc(n['frase'])}</em></p>" if n["frase"] else "")
     amenaza = n["slug"] in ("rata", "guardia", "raterillo")
     return dict(_id=uid("actor:" + n["slug"]), name=n["n"], type="creature", img=img(f"assets/actors/portraits/{n['slug']}.webp"),
-                system=dict(health=dict(value=n["pg"], min=0, max=n["pg"]), hits=dict(value=2, max=2), armor=n["arm"], biography=bio, notes="",
+                system=dict(health=dict(value=n["pg"], min=0, max=n["pg"]), hits=dict(value=2, max=2), armor=n["arm"], biography=bio, notes=bio,  # la hoja de criatura solo enseña Notas
                             description=dict(disposition=""), stats=stats(n["fue"], n["des"], n["vol"])),
                 prototypeToken=token(n["slug"], n["n"], -1 if n["slug"] in ("rata", "guardia") else 0, n.get("tam", 1)), items=atq, effects=[],
                 folder=FOLD[("Actor", "Amenazas" if amenaza else "PNJ")], sort=0, ownership=dict(default=0), flags={ID: dict(slug=n["slug"], tipo="pnj")})
@@ -244,7 +251,8 @@ USO_FOUNDRY = """<p class="mrrm-kicker">00 · Cómo se juega en Foundry</p>
 <li><strong>Reglas del golpe.</strong> Salvación de nervios para los ratones marcados (mete Paranoico o Dedo flojo en una casilla libre), la rueda del Flashback 1 y el <strong>duelo de miradas</strong>: cada jugador elige en secreto a quién apunta y tú lo revelas de golpe.</li>
 <li><strong>Ayudas.</strong> La pintada a toda la mesa, la libreta del Sr. Gris solo al elegido y el plano del almacén.</li></ul>
 <p>Los jugadores tienen en la misma barra su botón de <strong>Salvación de nervios</strong>. Las fichas de la banda tienen seis casillas: la parte de la mochila que no existe está tapada por «Sin sitio».</p>
-<p><strong>Integraciones.</strong> Con <em>MR- Dirección</em> activo, sus escenas, música, motivos, efectos, figuras e hitos aparecen en su barra. Con <em>MR- Pizarra</em> activo, el botón <em>Pizarra de sospechas</em> la deja preparada por capas para ir revelándola.</p>"""
+<p><strong>Integraciones.</strong> Con <em>MR- Dirección</em> activo, sus escenas, música, motivos, efectos, figuras e hitos aparecen en su barra. Con <em>MR- Pizarra</em> activo, el botón <em>Pizarra de sospechas</em> la deja preparada por capas para ir revelándola.</p>
+<p><strong>Banda sonora.</strong> Como en la película, la música es la radio de los setenta: en el almacén suena por un transistor y en los flashbacks y el clímax suena limpia. Música de Kevin MacLeod (incompetech.com), con licencia CC BY 4.0: """ + ", ".join(f"«{p}»" for p in dict.fromkeys(v[0] for v in BANDA_MUSICA.values())) + """. Efectos y ambientes de Freesound.org, de dominio público (CC0). Créditos completos en el NOTICE del módulo.</p>"""
 
 guia_paginas = [pagina("Reservoir Mice", "Un golpe ratonil que salió como el culo.", 0, "image", ruta("assets/cover.webp")), pagina("Cómo se juega en Foundry", f'<div class="mrrm-diario">{USO_FOUNDRY}</div>', 1)]
 for k, c in enumerate(caps):
@@ -297,8 +305,13 @@ EFECTOS = [("disparo", "Disparo", "gun"), ("amartillar", "Amartillar", "hand-poi
            ("latido", "Latido", "heart-pulse"), ("tictac", "Tictac", "clock"), ("pintada", "La pintada", "spray-can"), ("standoff", "Duelo", "gun")]
 
 
+def credito(carpeta, slug):
+    pista = BANDA_MUSICA.get(f"{carpeta}/{slug}", (None,))[0]
+    return f"«{pista}» de Kevin MacLeod (incompetech.com), CC BY 4.0" if pista else "Grabaciones de Freesound.org (CC0), mezcla de MR- Reservoir Mice"
+
+
 def sonido(carpeta, slug, nombre, canal, repetir, vol):
-    return dict(_id=uid(f"sonido:{carpeta}:{slug}"), name=nombre, description="", path=ruta(f"assets/audio/{carpeta}/{slug}.ogg"), channel=canal, playing=False, pausedTime=None,
+    return dict(_id=uid(f"sonido:{carpeta}:{slug}"), name=nombre, description=credito(carpeta, slug), path=ruta(f"assets/audio/{carpeta}/{slug}.ogg"), channel=canal, playing=False, pausedTime=None,
                 repeat=repetir, volume=vol, fade=2000 if repetir else None, sort=0, flags={ID: dict(slug=f"{carpeta}-{slug}")})
 
 

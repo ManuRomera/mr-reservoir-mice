@@ -40,7 +40,7 @@
 | Objetos | 45, con armas, equipo, pistas y las 3 condiciones |
 | Diarios | Guía del Narrador por capítulos, dosieres secretos, ayudas de juego y «Cómo se juega en Foundry» |
 | Tablas | 3: presión en el muelle, excusas de atracador y escenas postcréditos |
-| Audio | 9 temas, 9 motivos, 2 ambientes y 16 efectos, todos propios y en bucle sin corte |
+| Audio | La radio de los setenta: 9 temas y 9 motivos de Kevin MacLeod (soul, funk y jazz de época; los del almacén, por un transistor), 2 ambientes y 16 efectos de Freesound, en bucle sin corte |
 | Macros | 6 |
 | Libro | [PDF de 38 páginas](docs/pdf/Reservoir-Mice.pdf) con la aventura, los dosieres y los recortables |
 
@@ -60,6 +60,16 @@ El módulo añade un grupo **Reservoir Mice** en la barra de herramientas de la 
 - Con **[MR- Pizarra](https://github.com/ManuRomera/mr-pizarra)**, el botón de la chincheta prepara una pizarra de sospechas por capas (la banda, el botín, el maletero, el Sr. Gris y la verdad) que el Narrador va mostrando.
 
 Sin ellos, todo funciona con las herramientas propias del módulo.
+
+### La radio de los setenta
+
+Como en la película, la música importa. Suena «la radio del almacén»: soul, funk y jazz de época de Kevin MacLeod. Mientras la banda espera, en el retrete o en la cafetería, la música sale de un transistor; en la huida, el botín y el clímax, limpia. Cada escena trae la suya a través de MR- Dirección, con nueve motivos para cambiar de tono (tensión, paranoia, duelo…) y efectos reales de Freesound: los golpes del maletero, la persiana, las doce campanadas o el motor de la lancha.
+
+### Fichas y tiradas con el aspecto de la aventura
+
+Las fichas de Mausritter, sus diálogos de tirada y las tarjetas del chat se visten de Reservoir Mice: papel crema, tinta, el amarillo de la banda y el daño estampado como el sello de «Confidencial». El marco del retrato es del color de cada ratón. Sigue el **modo oscuro de [MR- Mausritter en español](https://github.com/ManuRomera/mr-mausritter-es)** y se apaga con un ajuste. El cuadro de la ficha muestra solo lo que hace falta para jugar, y el resto pasa a Notas. En un mundo nuevo, la aventura pone también la portada y la sinopsis del mundo.
+
+<p align="center"><img src="docs/img/captura-piel.webp" alt="Ficha del Sr. Púrpura con la piel de Reservoir Mice y una tarjeta de daño en el chat" width="100%"></p>
 
 ### Fichas, efectos y accesibilidad
 
@@ -82,11 +92,11 @@ Los personajes se entregan sin asignar: repártelos desde el panel del Narrador.
 
 - El texto vive en `texto/aventura.md` y los datos en `texto/datos.py`.
 - `python3 tools/foundry.py` genera `_data/aventura.json` y los paquetes de Dirección y Pizarra. `npm run build` compila el compendio y el zip.
-- `python3 tools/arte.py` prepara el arte, `python3 tools/audio.py` sintetiza la música y `python3 tools/libro.py` hace el PDF.
+- `python3 tools/arte.py` prepara el arte, `python3 tools/banda.py` monta la banda sonora y `python3 tools/libro.py` hace el PDF.
 - Las correcciones frente a la edición anterior están en [`docs/CORRECCIONES.md`](docs/CORRECCIONES.md).
 
 ## Créditos y licencia
 
-Historia y diseño: Manuel Romera Chinchilla. Módulo, libro, herramientas y revisión del texto y las reglas: Claude, bajo su dirección. Basada en la premisa de *Dockside Dogs*, de Paul Fricker (Chaosium). Imágenes generadas con IA a partir de cuatro imágenes modelo del autor y firmadas con la marca MR. Música y efectos de síntesis propia.
+Historia y diseño: Manuel Romera Chinchilla. Módulo, libro, herramientas y revisión del texto y las reglas: Claude, bajo su dirección. Basada en la premisa de *Dockside Dogs*, de Paul Fricker (Chaosium). Imágenes generadas con IA a partir de cuatro imágenes modelo del autor y firmadas con la marca MR. Música de Kevin MacLeod (CC BY 4.0) y efectos de Freesound (CC0); créditos completos en el NOTICE.
 
 CC BY-NC-SA 4.0. Mausritter es de Losing Games y *Dockside Dogs*, de Chaosium. Es una obra de aficionado y no oficial. Detalles en [NOTICE.md](NOTICE.md).
